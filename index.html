@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styleSheet" href="/css/main.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <title>Mostafa Tawfik</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="styleSheet" href="/css/main.css">
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+        <title>Mostafa Tawfik</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <h2 class="logo">Mostafa Tawfik</h2>
+                <div class="toggle"></div>
+            </header>
+
+            <video src="/vid/pexels-kelly-lacy.mp4" muted loop autoplay></video>
+
+            <div class="overlay"></div>
+
+            <div class="text">
+                <h2>Front-End Developer</h2>
+                <h3>UX/UI Designer</h3>
+                <p>Front-End web developer and UI/UX designer with experience in building and designing stunning, simple, and fully responsive websites, whether you want to build with CMS or to build from scratch, make or modify UI designs to enhance your brand identity, be sure that you will have a special and professional experience.</p>
+                <a href="#">Portfolio</a>
+            </div>
+
+            <ul class="social">
+                <li><a href="https://twitter.com/Mostafa__Tawfik" target="_blank"><img src="/img/twitter.png" alt=""></a></li>
+                <li><a href="https://dribbble.com/Mostafa_Tawfik" target="_blank"><img src="/img/dribbble.png" alt=""></a></li>
+                <li><a href="https://www.behance.net/Mostafa_Tawfik" target="_blank"><img src="/img/behance.png" alt=""></a></li>
+                <li><a href="https://github.com/Mostafa-Tawfik" target="_blank"><img src="/img/github.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/m8ustafa-tawfik/" target="_blank"><img src="/img/linkedin.png" alt=""></a></li>
+            </ul>
+        </section>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Credits</a></li>
+            </ul>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', ()=>{
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
 </html>
