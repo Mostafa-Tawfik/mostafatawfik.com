@@ -131,7 +131,7 @@
 
 .social {
     position: absolute;
-    bottom: 20px;
+    bottom: 60px;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -193,6 +193,12 @@
     }
     .text h3 {
         font-size: 2em;
+    }
+    .showcase.active {
+        right: 250px;
+    }
+    .menu {
+        width: 250px;
     }
 }
 
