@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="css/main.css?v=18-12-2021">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Portfolio</title>
+</head>
+<body>
+    <section class="showcase about">
+        <header>
+            <h2 class="logo"><a href="index.html">Mostafa Tawfik</a></h2>
+            <div class="toggle"></div>
+        </header>
+
+        <img id="bg" src="/img/blake-connally-unsplash.jpg">
+        
+        <div class="overlay"></div>
+
+        <div class="text about">
+            <div id="mypicdiv">
+                <img id="mypic" src="/img/logo.jpg">
+            </div>
+        </div>
+
+        <ul class="social about">
+            <li><a href="https://twitter.com/Mostafa__Tawfik" target="_blank " rel="noreferrer"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="https://dribbble.com/Mostafa_Tawfik" target="_blank" rel="noreferrer"><img src="img/dribbble.png" alt=""></a></li>
+            <li><a href="https://www.behance.net/Mostafa_Tawfik" target="_blank" rel="noreferrer"><img src="img/behance.png" alt=""></a></li>
+            <li><a href="https://github.com/Mostafa-Tawfik" target="_blank" rel="noreferrer"><img src="img/github.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/m8ustafa-tawfik/" target="_blank" rel="noreferrer"><img src="img/linkedin.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+            <!-- <li><a href="#">Credits</a></li> -->
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+        const social = document.querySelector('.social.about')
+
+        menuToggle.addEventListener('click', ()=>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            social.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
