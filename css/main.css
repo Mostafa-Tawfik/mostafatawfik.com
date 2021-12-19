@@ -248,6 +248,13 @@
     display: block;
 }
 
+.overlay.about {
+    background: #434343;
+    mix-blend-mode: multiply;
+    filter: saturate(4);
+    filter: contrast(1.6);
+}
+
 .mypicdiv {
     display: flex;
     justify-content: left;
