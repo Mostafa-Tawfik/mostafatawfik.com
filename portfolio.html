@@ -4,28 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styleSheet" href="css/main.css?v=18-12-2021">
+    <link rel="styleSheet" href="css/main.css?v=19-12-2021">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <title>Portfolio</title>
 </head>
 <body>
-    <section class="showcase about">
+    <section class="showcase portfolio">
         <header>
-            <h2 class="logo"><a href="index.html">Mostafa Tawfik</a></h2>
+            <div class="title-holder">
+                <h2 class="logo"><a href="index.html">Mostafa Tawfik</a></h2>
+                <h2 class="head-title">recent Projects</h2>
+            </div>
             <div class="toggle"></div>
         </header>
 
-        <img id="bg" src="/img/blake-connally-unsplash.jpg">
+        <img class="bg" src="/img/dmitrii-zhodzishskii-unsplash.webp">
         
-        <div class="overlay"></div>
+        <div class="overlay portfolio"></div>
 
-        <div class="text about">
-            <div id="mypicdiv">
-                <img id="mypic" src="/img/logo.jpg">
+
+
+        <div class="card-holder">
+            <div class="card mt">
+                <div class="card-content">
+                    <h2 class="card-title">My Website</h2>
+                    <p class="card-body">
+                        My portfolio website, a full responsive multiple pages built and designed from scratch.
+                    </p>
+                    <a href="https://www.mostafatawfik.com/" target='blank' class="button" rel="noreferrer">More</a>
+                </div>
             </div>
+
+            <div class="card wa">
+                <div class="card-content">
+                    <h2 class="card-title">Weather App</h2>
+                    <p class="card-body">
+                        An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.
+                    </p>
+                    <a href="https://github.com/Mostafa-Tawfik/FWD--Weather-Journal-App" target='blank' class="button" rel="noreferrer">More</a>
+                </div>
+            </div>
+
+            <div class="card lp">
+                <div class="card-content">
+                    <h2 class="card-title">Landing Page</h2>
+                    <p class="card-body">
+                        A multi-section landing page that dynamically updates the navigational menu based on the amount of content that is added to the page.
+                    </p>
+                    <a href="https://mostafa-tawfik.github.io/FWD-Landingpage/" target='blank' class="button" rel="noreferrer">More</a>
+                </div>
+            </div>
+
+            <div class="card gs">
+                <div class="card-content">
+                    <h2 class="card-title">Games Store</h2>
+                    <p class="card-body">
+                        A mockup design for gaming store, build it with pure HTML and CSS.
+                    </p>
+                    <a href="https://mostafa-tawfik.github.io/50FiversGames/" target='blank' class="button" rel="noreferrer">More</a>
+                </div>
+            </div>
+
         </div>
 
-        <ul class="social about">
+        <ul class="social vertical">
             <li><a href="https://twitter.com/Mostafa__Tawfik" target="_blank " rel="noreferrer"><img src="img/twitter.png" alt=""></a></li>
             <li><a href="https://dribbble.com/Mostafa_Tawfik" target="_blank" rel="noreferrer"><img src="img/dribbble.png" alt=""></a></li>
             <li><a href="https://www.behance.net/Mostafa_Tawfik" target="_blank" rel="noreferrer"><img src="img/behance.png" alt=""></a></li>
@@ -37,22 +79,13 @@
     <div class="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
             <!-- <li><a href="#">Contact</a></li> -->
             <!-- <li><a href="#">Credits</a></li> -->
         </ul>
     </div>
-    <script>
-        const menuToggle = document.querySelector('.toggle')
-        const showcase = document.querySelector('.showcase')
-        const social = document.querySelector('.social.about')
-
-        menuToggle.addEventListener('click', ()=>{
-            menuToggle.classList.toggle('active')
-            showcase.classList.toggle('active')
-            social.classList.toggle('active')
-        })
-    </script>
+    <button onclick="goUP()" class="upBtn" title="UP">UP</button>
+    <script src="app.js"></script>
 </body>
 </html>

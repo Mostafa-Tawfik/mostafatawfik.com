@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styleSheet" href="css/main.css?v=18-12-2021">
+    <link rel="styleSheet" href="css/main.css?v=19-12-2021">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <title>About Me</title>
 </head>
@@ -15,21 +15,18 @@
             <div class="toggle"></div>
         </header>
 
-        <img id="bg" src="/img/blake-connally-unsplash.jpg">
+        <img class="bg" src="/img/glenn-carstens-peters-unsplash.jpg">
         
         <div class="overlay"></div>
 
         <div class="text about">
-            <div id="mypicdiv">
-                <img id="mypic" src="/img/logo.jpg">
+            <div class="mypicdiv">
+                <img class="mypic" src="/img/logo.jpg">
             </div>
             <div class="innertext">
-            <h3>I believe in quality</h3>
-            <p>High-quality products always sell themselves, 
-                It’s almost impossible to find a high-quality product that doesn’t 
-                have a good market share even with a low marketing budget.</p>
-            <p>I have always been recognized as a philosophy person, and so is my work, 
-                my projects always have a philosophy behind them and a story to tell.</p>
+            <h2 class="head-title">I believe in quality</h2>
+            <p>High-quality products always sell themselves, Look around! It’s almost impossible to find a high-quality product that doesn’t have a good market share even with a low marketing budget.</p>
+            <p>I have always been recognized as a philosophy person, and so is my work, my projects always have a philosophy behind them and a story to tell.</p>
             <p>I started the frontend path with Udacity FWD and the UX/UI designing program with Google, 
                 already done some awesome projects yet it's only the first steps towards an endless journey.</p>
 
@@ -46,8 +43,7 @@
             <h6>Harvard University</h6>
             <p> Started Date Dec 2021 <br>
                 Expected Date of completion: May 2022 <br><br>
-                Harvard University's introduction to the intellectual 
-                enterprises of computer science and the art of programming.</p>
+                Harvard University's introduction to the intellectual <br> enterprises of computer science and the art of programming.</p>
 
             <h5>UX Design Program</h5>
             <h6>Google</h6>
@@ -93,7 +89,7 @@
             </div>
         </div>
 
-        <ul class="social about">
+        <ul class="social vertical">
             <li><a href="https://twitter.com/Mostafa__Tawfik" target="_blank " rel="noreferrer"><img src="img/twitter.png" alt=""></a></li>
             <li><a href="https://dribbble.com/Mostafa_Tawfik" target="_blank" rel="noreferrer"><img src="img/dribbble.png" alt=""></a></li>
             <li><a href="https://www.behance.net/Mostafa_Tawfik" target="_blank" rel="noreferrer"><img src="img/behance.png" alt=""></a></li>
@@ -105,22 +101,13 @@
     <div class="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
             <!-- <li><a href="#">Contact</a></li> -->
             <!-- <li><a href="#">Credits</a></li> -->
         </ul>
     </div>
-    <script>
-        const menuToggle = document.querySelector('.toggle')
-        const showcase = document.querySelector('.showcase')
-        const social = document.querySelector('.social.about')
-
-        menuToggle.addEventListener('click', ()=>{
-            menuToggle.classList.toggle('active')
-            showcase.classList.toggle('active')
-            social.classList.toggle('active')
-        })
-    </script>
+    <button onclick="goUP()" class="upBtn" title="UP">UP</button>
+    <script src="app.js"></script>
 </body>
 </html>

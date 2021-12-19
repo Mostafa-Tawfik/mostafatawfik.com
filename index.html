@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="A Front-End web developer and UI/UX designer with experience in building and designing static and dynamic responsive websites.">
-        <link rel="styleSheet" href="css/main.css?v=18-12-2021">
+        <link rel="styleSheet" href="css/main.css?v=19-12-2021">
         <link rel="shortcut icon" href="favicon.png" type="image/png">
         <title>Mostafa Tawfik</title>
     </head>
@@ -16,7 +16,7 @@
                 <div class="toggle"></div>
             </header>
 
-            <img id="bg" src="/img/quinton-coetzee-unsplash.jpg">
+            <img class="bg" src="/img/quinton-coetzee-unsplash.jpg">
             
             <div class="overlay"></div>
 
@@ -27,6 +27,7 @@
                     simple, and fully responsive static and dynamic websites, I build with CMS and build from scratch,
                     make and modify UI designs to enhance the brand identity.</p>
                 <a href="about.html">More about me</a>
+                <a href="portfolio.html">Recent projects</a>
             </div>
 
             <ul class="social">
@@ -41,20 +42,12 @@
         <div class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <!-- <li><a href="#">Contact</a></li> -->
                 <!-- <li><a href="#">Credits</a></li> -->
             </ul>
         </div>
-        <script>
-            const menuToggle = document.querySelector('.toggle')
-            const showcase = document.querySelector('.showcase')
-
-            menuToggle.addEventListener('click', ()=>{
-                menuToggle.classList.toggle('active')
-                showcase.classList.toggle('active')
-            })
-        </script>
+        <script src="app.js"></script>
     </body>
 </html>
