@@ -5,21 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="A Front-End web developer and UI/UX designer with experience in building and designing static and dynamic responsive websites.">
-        <link rel="styleSheet" href="css/main.css?v=20-12-2021">
+        <link rel="styleSheet" href="css/main.css?v=20-12-2021-2">
         <link rel="shortcut icon" href="favicon.png" type="image/png">
         <title>Mostafa Tawfik</title>
     </head>
     <body>
         <section class="showcase">
             <header>
-                <h2 class="logo"><a href="index.html">Mostafa Tawfik</a></h2>
+                <h2 class="logo"><a href="javascript:delay('index.html')" class="home">Mostafa Tawfik</a></h2>
 
                 <div class="header-holder">
-                    <a href="portfolio.html" class="before"><img src="/img/previous.png" alt="previous page button" width="35px"></a>
+                    <a href="javascript:delay('portfolio.html')" class="before"><img src="/img/previous.png" alt="previous page button" width="35px"></a>
 
                     <div class="toggle"></div>
 
-                    <a href="about.html" class="next"><img src="/img/next.png" alt="next page button" width="35px"></a>
+                    <a href="javascript:delay('about.html')" class="next"><img src="/img/next.png" alt="next page button" width="35px"></a>
                 </div>
             </header>
 
@@ -33,8 +33,8 @@
                 <p>Front-End web developer and UI/UX designer with experience in building and designing stunning,
                     simple, and fully responsive static and dynamic websites, I build with CMS and build from scratch,
                     make and modify UI designs to enhance the brand identity.</p>
-                <a href="about.html">More about me</a>
-                <a href="portfolio.html">Recent projects</a>
+                <a href="javascript:delay('about.html')" class="more">More about me</a>
+                <a href="javascript:delay('portfolio.html')" class="port">Recent projects</a>
             </div>
 
             <ul class="social">
@@ -56,5 +56,21 @@
             </ul>
         </div>
         <script src="app.js"></script>
+        <script>
+            const moreToggle = document.querySelector('.more');
+            const portToggle = document.querySelector('.port');
+
+            moreToggle.addEventListener('click', ()=>{
+                moreToggle.classList.toggle('morePage');
+                showcase.classList.toggle('morePage');
+                menu.classList.toggle('morePage');
+            });
+
+            portToggle.addEventListener('click', ()=>{
+                portToggle.classList.toggle('portPage');
+                showcase.classList.toggle('portPage');
+                menu.classList.toggle('portPage');
+            });
+        </script>
     </body>
 </html>

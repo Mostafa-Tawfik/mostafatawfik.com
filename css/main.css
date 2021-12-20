@@ -21,6 +21,10 @@
     main section
 ==================*/
 
+body {
+  background: rgb(0, 0, 0);
+}
+
 .showcase {
   position: absolute;
   right: 0;
@@ -53,6 +57,7 @@
 }
 
 .logo {
+  display: inline-block;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -175,13 +180,33 @@
     filter: invert(1);
 }
 
-.showcase.nextPage {
+.showcase.nextPage,
+.showcase.morePage,
+.showcase.portPage,
+.social.vertical.nextPage {
     right: 100%;
-    transition: 3s;
+    transition: 1.5s;
 }
 
-.menu.nextPage {
+.showcase.previousPage {
+  right: -100%;
+  transition: 1.5s;
+}
+
+.menu.nextPage,
+.menu.morePage,
+.menu.portPage {
     right: 100%;
+}
+
+.menu.previousPage,
+.social.vertical.previousPage {
+    right: -100%;
+}
+
+.logo.homePage {
+  transform: scale(1.5);
+  transition: 5s;
 }
 
 /* menu toogle */
@@ -195,6 +220,11 @@
     background-position: center;
     cursor: pointer;
     filter: invert(1);
+    transition: 0.8s;
+}
+
+.toggle:hover {
+  transform: scale(1.2);
 }
 
 .toggle.active {
@@ -205,7 +235,7 @@
     cursor: pointer;
 }
 
-/* more about me button */
+/* more button */
 .button {
     cursor: pointer;
     display: inline-block;
@@ -272,6 +302,7 @@
 ============*/
 
 .menu {
+  background: white;
   position: absolute;
   top: 0;
   right: 0;
@@ -346,6 +377,10 @@
   right: 300px;
 }
 
+.social.vertical li a:hover {
+  transform: scale(0.8) translateX(-15px);
+}
+
 /* ====================
     Portfolio Page
 =======================*/
@@ -411,8 +446,8 @@ h2.head-title {
 
 .card.lp {
   background-image: url(/img/lp.jpg);
-  background-position: -25px;
-  padding: 11em 0 0;
+  background-position: -60px;
+  padding: 12em 0 0;
 }
 
 .card:hover,
@@ -490,6 +525,15 @@ h2.head-title {
   .showcase header {
     padding: 40px;
   }
+  .card-holder {
+    margin-top: 2em;
+  }
+  .card {
+    transform: scale(0.9);
+  }
+  .logo {
+    font-size: 1em;
+  }
   .text h2 {
     font-size: 3em;
   }
@@ -527,7 +571,7 @@ h2.head-title {
     padding: 5em 0 2em 0;
   }
   h2.head-title {
-    font-size: 1.6em;
+    font-size: 1.1em;
   }
 }
 
@@ -535,6 +579,9 @@ h2.head-title {
   .showcase,
   .showcase header {
     padding: 20px;
+  }
+  .card {
+    transform: scale(0.8);
   }
   .text h2 {
     font-size: 3em;
@@ -567,7 +614,7 @@ h2.head-title {
     padding: 5em 0 2em 0;
   }
   h2.head-title {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
 }
 
