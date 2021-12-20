@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styleSheet" href="css/main.css?v=20-12-2021-2">
+    <link rel="styleSheet" href="css/main.css?v=21-12-2021">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <title>Portfolio</title>
 </head>
@@ -39,16 +39,6 @@
                 </div>
             </div>
 
-            <div class="card wa">
-                <div class="card-content">
-                    <h2 class="card-title">Weather App</h2>
-                    <p class="card-body">
-                        An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.
-                    </p>
-                    <a href="https://github.com/Mostafa-Tawfik/FWD--Weather-Journal-App" target="_blank" class="button" rel="noreferrer">More</a>
-                </div>
-            </div>
-
             <div class="card lp">
                 <div class="card-content">
                     <h2 class="card-title">Landing Page</h2>
@@ -56,6 +46,16 @@
                         A multi-section landing page that dynamically updates the navigational menu based on sections amount.
                     </p>
                     <a href="https://mostafa-tawfik.github.io/FWD-Landingpage/" target="_blank" class="button" rel="noreferrer">More</a>
+                </div>
+            </div>
+
+            <div class="card wa">
+                <div class="card-content">
+                    <h2 class="card-title">Weather App</h2>
+                    <p class="card-body">
+                        An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.
+                    </p>
+                    <a href="https://github.com/Mostafa-Tawfik/FWD--Weather-Journal-App" target="_blank" class="button" rel="noreferrer">More</a>
                 </div>
             </div>
 
@@ -82,14 +82,14 @@
 
     <div class="menu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="javascript:delay('index.html')" class="menuLi">Home</a></li>
+            <li><a href="javascript:delay('about.html')" class="menuLi">About Me</a></li>
+            <li><a href="javascript:delay('portfolio.html')" class="menuLi">Portfolio</a></li>
             <!-- <li><a href="#">Contact</a></li> -->
             <!-- <li><a href="#">Credits</a></li> -->
         </ul>
     </div>
     <button onclick="goUP()" class="upBtn" title="UP">UP</button>
-    <script src="app.js"></script>
+    <script src="app.js?v=21-12-2021"></script>
 </body>
 </html>

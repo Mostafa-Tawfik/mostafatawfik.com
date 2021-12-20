@@ -183,12 +183,15 @@ body {
 .showcase.nextPage,
 .showcase.morePage,
 .showcase.portPage,
-.social.vertical.nextPage {
+.social.vertical.nextPage,
+.showcase.menuPage  {
     right: 100%;
     transition: 1.5s;
 }
 
-.showcase.previousPage {
+.showcase.previousPage,
+.menu.previousPage,
+.social.vertical.previousPage {
   right: -100%;
   transition: 1.5s;
 }
@@ -197,12 +200,15 @@ body {
 .menu.morePage,
 .menu.portPage {
     right: 100%;
+    transition: 1.5s;
 }
 
-.menu.previousPage,
-.social.vertical.previousPage {
-    right: -100%;
+.menu.menuPage,
+.social.vertical.menuPage {
+  top: -100%;
+  transition: 1.5s;
 }
+
 
 .logo.homePage {
   transform: scale(1.5);
