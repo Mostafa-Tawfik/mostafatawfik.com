@@ -163,7 +163,7 @@ body {
 }
 
 /* ==============
-    bubttons
+    buttons
 =================*/
 
 /* previousPage toogle */
@@ -556,10 +556,10 @@ h2.head-title {
     font-size: 1.1em;
   }
   .showcase.active {
-    right: 250px;
+    right: 205px;
   }
   .menu {
-    width: 250px;
+    width: 205px;
   }
   .social.vertical {
     position: relative;
