@@ -7,66 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="I'm Mostafa Tawfik a Front-End web developer and UI/UX designer with experience in building and designing static and dynamic responsive websites.">
-    <link rel="styleSheet" href="css/main.css?v=25-12-2021">
+    <link rel="styleSheet" href="css/main.css?v=26-12-2021">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <title>Mostafa Tawfik</title>
 </head>
 
 <body>
     <section class="showcase">
-        <header>
-            <h2 class="logo"><a href="javascript:delay('index.html')"
-                    class="home">Mostafa Tawfik</a></h2>
+        <section class="main">
+            <header>
+                <h2 class="logo"><a href="javascript:delay('index.html')"
+                        class="home">Mostafa Tawfik</a></h2>
 
-            <div class="header-holder">
-                <a href="javascript:delay('portfolio.html')" class="before"><img
-                        src="/img/previous.png" alt="previous page button"
-                        width="35px"></a>
+                <div class="header-holder">
+                    <a href="javascript:delay('portfolio.html')" class="before"><img
+                            src="/img/previous.png" alt="previous page button"
+                            width="35px"></a>
 
-                <div class="toggle"></div>
+                    <div class="toggle"></div>
 
-                <a href="javascript:delay('about.html')" class="next"><img
-                        src="/img/next.png" alt="next page button"
-                        width="35px"></a>
+                    <a href="javascript:delay('about.html')" class="next"><img
+                            src="/img/next.png" alt="next page button"
+                            width="35px"></a>
+                </div>
+            </header>
+
+            <img class="bg" src="/img/quinton-coetzee-unsplash.jpg"
+                alt="keyboard background">
+
+            <div class="overlay"></div>
+
+            <div class="text">
+                <h2>Front-End Developer</h2>
+                <h3>UX/UI Designer</h3>
+                <p>Front-End web developer and UI/UX designer with experience in
+                    building and designing stunning,
+                    simple, and fully responsive static and dynamic websites, I
+                    build with CMS and build from scratch,
+                    make and modify UI designs to enhance the brand identity.</p>
+                <a href="javascript:delay('about.html')" class="more">More about
+                    me</a>
+                <a href="javascript:delay('portfolio.html')" class="port">Recent
+                    projects</a>
             </div>
-        </header>
 
-        <img class="bg" src="/img/quinton-coetzee-unsplash.jpg"
-            alt="keyboard background">
-
-        <div class="overlay"></div>
-
-        <div class="text">
-            <h2>Front-End Developer</h2>
-            <h3>UX/UI Designer</h3>
-            <p>Front-End web developer and UI/UX designer with experience in
-                building and designing stunning,
-                simple, and fully responsive static and dynamic websites, I
-                build with CMS and build from scratch,
-                make and modify UI designs to enhance the brand identity.</p>
-            <a href="javascript:delay('about.html')" class="more">More about
-                me</a>
-            <a href="javascript:delay('portfolio.html')" class="port">Recent
-                projects</a>
-        </div>
-
-        <ul class="social">
-            <li><a href="https://twitter.com/Mostafa__Tawfik" target="_blank "
-                    rel="noreferrer"><img src="img/twitter.png"
-                        alt="twitter logo"></a></li>
-            <li><a href="https://dribbble.com/Mostafa_Tawfik" target="_blank"
-                    rel="noreferrer"><img src="img/dribbble.png"
-                        alt="dribbble logo"></a></li>
-            <li><a href="https://www.behance.net/Mostafa_Tawfik" target="_blank"
-                    rel="noreferrer"><img src="img/behance.png"
-                        alt="behance logo"></a></li>
-            <li><a href="https://github.com/Mostafa-Tawfik" target="_blank"
-                    rel="noreferrer"><img src="img/github.png"
-                        alt="github logo"></a></li>
-            <li><a href="https://www.linkedin.com/in/m8ustafa-tawfik/"
-                    target="_blank" rel="noreferrer"><img src="img/linkedin.png"
-                        alt="linkedin logo"></a></li>
-        </ul>
+            <ul class="social">
+                <li><a href="https://twitter.com/Mostafa__Tawfik" target="_blank "
+                        rel="noreferrer"><img src="img/twitter.png"
+                            alt="twitter logo"></a></li>
+                <li><a href="https://dribbble.com/Mostafa_Tawfik" target="_blank"
+                        rel="noreferrer"><img src="img/dribbble.png"
+                            alt="dribbble logo"></a></li>
+                <li><a href="https://www.behance.net/Mostafa_Tawfik" target="_blank"
+                        rel="noreferrer"><img src="img/behance.png"
+                            alt="behance logo"></a></li>
+                <li><a href="https://github.com/Mostafa-Tawfik" target="_blank"
+                        rel="noreferrer"><img src="img/github.png"
+                            alt="github logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/m8ustafa-tawfik/"
+                        target="_blank" rel="noreferrer"><img src="img/linkedin.png"
+                            alt="linkedin logo"></a></li>
+            </ul>
+        </section>
     </section>
 
     <div class="menu">
@@ -81,6 +83,7 @@
             <!-- <li><a href="#">Credits</a></li> -->
         </ul>
     </div>
+    <button onclick="goUP()" class="upBtn" title="UP">UP</button>
     <script src="app.js?v=22-12-2021"></script>
     <script>
         const moreToggle = document.querySelector('.more');

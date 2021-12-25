@@ -56,6 +56,11 @@ body {
   justify-content: space-between;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo {
   display: inline-block;
   text-transform: uppercase;
@@ -276,12 +281,13 @@ body {
 ===========================*/
 
 .social {
-  position: absolute;
-  bottom: 100px;
+  /* position: absolute;
+  bottom: 100px; */
   z-index: 10;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  margin-top: 1em;
 }
 
 .social li {
@@ -563,6 +569,7 @@ h2.head-title {
   }
   .social.vertical {
     position: relative;
+    top: 0%;
     bottom: 0px;
     z-index: 10;
     display: flex;
@@ -590,6 +597,47 @@ h2.head-title {
     transform: scale(0.8);
   }
   .text h2 {
+    font-size: 2.5em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
+  .text h4 {
+    font-size: 1.6em;
+  }
+  .text h5 {
+    font-size: 1.3em;
+  }
+  .text h6 {
+    font-size: 1.1em;
+  }
+  h2.head-title {
+    font-size: 1.2em;
+  }
+  .social img {
+    width: 30px;
+  }
+}
+
+@media (max-height: 550px) {
+  .showcase {
+    padding: 1em 40px;
+    position: relative;
+  }
+  .showcase header {
+    padding: 1em 0;
+    position: relative;
+  }
+  .card-holder {
+    margin-top: 2em;
+  }
+  .card {
+    transform: scale(0.9);
+  }
+  .logo {
+    font-size: 1em;
+  }
+  .text h2 {
     font-size: 3em;
   }
   .text h3 {
@@ -604,13 +652,20 @@ h2.head-title {
   .text h6 {
     font-size: 1.1em;
   }
+  .showcase.active {
+    right: 205px;
+  }
+  .menu {
+    width: 205px;
+  }
   .social.vertical {
     position: relative;
+    top: 0%;
     bottom: 0px;
     z-index: 10;
     display: flex;
-    flex-direction: row;
     justify-content: left;
+    flex-direction: row;
     align-items: center;
   }
   .mypicdiv {
@@ -620,7 +675,7 @@ h2.head-title {
     padding: 5em 0 2em 0;
   }
   h2.head-title {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
