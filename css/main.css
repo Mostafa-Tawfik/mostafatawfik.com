@@ -225,7 +225,7 @@ body {
     position: relative;
     width: 60px;
     height: 60px;
-    background: url("/img/menu.png");
+    background: url("../img/menu.png");
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
@@ -239,7 +239,7 @@ body {
 }
 
 .toggle.active {
-    background: url("/img/close.png");
+    background: url("../img/close.png");
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
@@ -441,23 +441,28 @@ h2.head-title {
   transition: 0.5s;
 }
 
+.card.mr {
+  background-image: url(../img/myReads.png);
+  padding: 14em 0 0;
+}
+
 .card.mt {
-  background-image: url(/img/mt.JPG);
+  background-image: url(../img/mt.JPG);
   background-position: -25px;
 }
 
 .card.gs {
-  background-image: url(/img/games\ store\ 2.0.0.JPG);
+  background-image: url(../img/games\ store\ 2.0.0.JPG);
   padding: 14em 0 0;
 }
 
 .card.wa {
-  background-image: url(/img/wa.jpg);
+  background-image: url(../img/weatherApp.png);
   padding: 12em 0 0;
 }
 
 .card.lp {
-  background-image: url(/img/lp.jpg);
+  background-image: url(../img/landingPage.png);
   background-position: -60px;
   padding: 12em 0 0;
 }
