@@ -442,7 +442,7 @@ h2.head-title {
 }
 
 .card.mr {
-  background-image: url(../img/myReads.png);
+  background-image: url(../img/myReads.webp);
   padding: 14em 0 0;
 }
 
@@ -457,12 +457,12 @@ h2.head-title {
 }
 
 .card.wa {
-  background-image: url(../img/weatherApp.png);
+  background-image: url(../img/weatherApp.webp);
   padding: 12em 0 0;
 }
 
 .card.lp {
-  background-image: url(../img/landingPage.png);
+  background-image: url(../img/landingPage.webp);
   background-position: -60px;
   padding: 12em 0 0;
 }
