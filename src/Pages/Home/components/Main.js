@@ -10,9 +10,9 @@ export default function Main() {
           simple, and fully responsive static and dynamic websites, I
           build with CMS and build from scratch,
           make and modify UI designs to enhance the brand identity.</p>
-      <a href="about.html" className="more">More about
+      <a href="#0" className="more">More about
           me</a>
-      <a href="portfolio.html" className="port">Recent
+      <a href="#0" className="port">Recent
           projects</a>
     </div>
   </div>;

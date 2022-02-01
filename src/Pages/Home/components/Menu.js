@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 export default function Menu() {
   
@@ -6,24 +7,22 @@ export default function Menu() {
     <div className='menu'>
       <ul>
         <li>
-          <a 
-            href="index.html" 
-            className="menuLi">Home
-          </a>
+        <Link
+          to={'/'}
+          className="menuLi"
+          >Home</Link>
         </li>
         <li>
-          <a 
-            href="about.html" 
-            className="menuLi">
-              About Me
-          </a>
+          <Link
+          to={'/About'}
+          className="menuLi"
+          >About Me</Link>
         </li>
         <li>
-          <a 
-            href="portfolio.html"
-            className="menuLi">
-              Portfolio
-          </a>
+        <Link
+          to={'/Portfolio'}
+          className="menuLi"
+          >Portfolio</Link>
         </li>
         {/* <!-- <li><a href="#">Contact</a></li> -->
         <!-- <li><a href="#">Credits</a></li> --> */}
