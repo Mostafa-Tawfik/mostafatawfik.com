@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/Header';
+import Header from '../components/Header';
 import Main from './components/Main';
 import Menu from './components/Menu';
 import SocialLinks from './components/SocialLinks';

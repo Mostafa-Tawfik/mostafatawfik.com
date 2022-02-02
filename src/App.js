@@ -24,7 +24,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home isActive={isActive} toggle={toggle}/>}/>
         <Route path='/About' element={<About isActive={isActive} toggle={toggle}/>}/>
-        <Route path='/Portfolio' element={<About isActive={isActive} toggle={toggle}/>}/>
+        <Route path='/Portfolio' element={<Portfolio isActive={isActive} toggle={toggle}/>}/>
       </Routes>
       
     </section>
