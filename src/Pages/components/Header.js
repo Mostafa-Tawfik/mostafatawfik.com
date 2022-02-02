@@ -1,17 +1,13 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 export default function Header(props) {
 
-  
-  const [isLogo, setIsLogo] = React.useState(true)
-
-  function toggleLogo() {
-    setIsLogo(prev => !prev)
-  }
-  
   // import useLocation 
   const location = useLocation()
+
+  // import useNavigate
+  const navigate = useNavigate()
   
   // a state to decide next and prev page path
   const [switchPage, setswitchPage] = React.useState({
@@ -44,13 +40,31 @@ export default function Header(props) {
       }
     })
   },[location]) 
+
+  // Mostafa Tawfik effect
+  const [isLogo, setIsLogo] = React.useState(true)
+
+  function toggleLogo() {
+    setIsLogo(prev => !prev)
+  }
+
+
+  // go to path after delay
+  function delayAndGo(e) {
+    e.preventDefault()
+
+    setTimeout(() => navigate('/'), 1300)
+  }
+
   
   return <div>
     <header>
       <h2 className={isLogo ? 'logo' : 'logo homePage'} onClick={toggleLogo}>
+        
       <Link
-          to={'/'}
-          className={isLogo ? 'home' : 'home homePage'}>          
+          to={''}
+          className={isLogo ? 'home' : 'home homePage'}
+          onClick={delayAndGo}>          
           Mostafa Tawfik
         </Link> 
       </h2>

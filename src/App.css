@@ -17,6 +17,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 /* ===============
     main section
 ==================*/
@@ -574,10 +575,11 @@ h2.head-title {
     font-size: 1.1em;
   }
   .showcase.active {
-    right: 205px;
+    transform: translateX(-205px);
   }
   .menu {
     width: 205px;
+    transform: translateX(205px);
   }
   .social.vertical {
     position: relative;
@@ -665,10 +667,11 @@ h2.head-title {
     font-size: 1.1em;
   }
   .showcase.active {
-    right: 205px;
+    transform: translateX(-205px);
   }
   .menu {
     width: 205px;
+    transform: translateX(205px);
   }
   .social.vertical {
     position: relative;
