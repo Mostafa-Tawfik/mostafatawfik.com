@@ -50,21 +50,24 @@ export default function Header(props) {
 
 
   // go to path after delay
-  function delayAndGo(e) {
+  function delayAndGo(e, to) {
     e.preventDefault()
 
-    setTimeout(() => navigate('/'), 1300)
-  }
+    setTimeout(() => navigate(to), 1300)
 
+    return props.toggleNextPage
+  }
   
+  console.log(props.isActive);
+
   return <div>
     <header>
       <h2 className={isLogo ? 'logo' : 'logo homePage'} onClick={toggleLogo}>
         
       <Link
-          to={''}
+          to={'/'}
           className={isLogo ? 'home' : 'home homePage'}
-          onClick={delayAndGo}>          
+          onClick={(e)=> delayAndGo(e, '/')}>          
           Mostafa Tawfik
         </Link> 
       </h2>
@@ -72,14 +75,19 @@ export default function Header(props) {
       <div className="header-holder">
 
         <Link
-          to={`${switchPage.prevPage}`}>          
+          to={`${switchPage.prevPage}`}
+          onClick={(e)=> delayAndGo(e, `${switchPage.prevPage}`)}>          
           <img src='./images/previous.png' className='before' width="35px" alt="previous page button"></img>
         </Link> 
-        
-        <button className={props.isActive ? 'toggle' : 'toggle active'} onClick={props.toggle}></button>
+
+        <button className={props.isActive.menuActive ? 'toggle active' : 'toggle'} onClick={props.toggle}></button>
 
         <Link
-          to={`${switchPage.nextPage}`}>          
+          to={`${switchPage.nextPage}`}
+          onClick={(e) => {
+            props.toggleNextPage()
+            delayAndGo(e, `${switchPage.prevPage}`)
+          }}>          
           <img src='./images/next.png' className='next' width="35px" alt="next page button"></img>
         </Link>         
 

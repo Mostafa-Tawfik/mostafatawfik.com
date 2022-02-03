@@ -8,23 +8,42 @@ import {Routes, Route} from 'react-router-dom';
 function App() {
 
 
-  const [isActive, setIsActive] = React.useState(true)
+  const [isActive, setIsActive] = React.useState({
+    menuActive: false,
+    nextPageActive: false,
+  })
 
-  function toggle() {
-    setIsActive(prev => !prev)
+  // toggle menu
+  function toggleMenu() {
+    setIsActive(prev => {
+      return {
+        ...prev,
+        menuActive: !isActive.menuActive
+      }
+    })
+  }
+
+  // toggle next
+  function toggleNextPage() {
+    setIsActive(prev => {
+      return {
+        ...prev,
+        nextPageActive: !isActive.nextPageActive
+      }
+    })
   }
 
   return (
-    <section className={isActive ? 'showcase' : 'showcase active'}>
+    <section className={isActive.menuActive ? 'showcase active' : 'showcase'}>
       <img 
         className="bg" 
         src="./images/quinton-coetzee-unsplash.webp"
         alt="keyboard background"></img>
       <div className="overlay"></div>
       <Routes>
-        <Route path='/' element={<Home isActive={isActive} toggle={toggle}/>}/>
-        <Route path='/About' element={<About isActive={isActive} toggle={toggle}/>}/>
-        <Route path='/Portfolio' element={<Portfolio isActive={isActive} toggle={toggle}/>}/>
+        <Route path='/' element={<Home isActive={isActive} toggleNextPage={toggleNextPage} toggle={toggleMenu}/>}/>
+        <Route path='/About' element={<About isActive={isActive} toggleNextPage={toggleNextPage} toggle={toggleMenu}/>}/>
+        <Route path='/Portfolio' element={<Portfolio isActive={isActive} toggleNextPage={toggleNextPage} toggle={toggleMenu}/>}/>
       </Routes>
       
     </section>
