@@ -361,9 +361,9 @@ body {
 .about-header {
   display: flex;
   flex-wrap: wrap;
-  min-width: 80vw;
+  width: 100%;
   min-height: 80vh;
-  justify-content: space-between;
+  justify-content:space-evenly;
   align-items: center;
   z-index: 10;
 }
@@ -373,9 +373,30 @@ body {
   z-index: 10;
 }
 
+.about-header-desc h1{
+  font-size: 4rem;
+}
+
+
 .about-stack {
   background: rgba(255, 255, 255, 0.05);
-  min-height: 80vh;
+  width: 100%;
+}
+
+.stackSet-holder{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.stackSet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  z-index: 10;
 }
 
 .showcase.about {
@@ -575,7 +596,13 @@ h2.head-title {
   .about-header-desc {
     width: 300px;
     z-index: 10;
+    margin-top: 4em;
   }
+  .stackSet *, h2{
+    height: 70px;
+    font-size: 15px;
+  }
+
   .showcase,
   .showcase header {
     padding: 40px;
@@ -589,6 +616,11 @@ h2.head-title {
   .logo {
     font-size: 1em;
   }
+
+  .about-header-desc h1 {
+    font-size: 2rem;
+  }
+
   .text h2 {
     font-size: 3em;
   }

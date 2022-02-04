@@ -23,13 +23,15 @@ function App() {
     })
   }
 
+  
   // switch pages animations
   const location = useLocation()
-
+  
   return (
     <section>
+      <AnimatePresence exitBeforeEnter>
       <section 
-      className={`showcase ${isActive.menuActive ? 'active' : ''}`}>   
+      className={`showcase ${location.pathname.split('/')[1].toLowerCase()} ${isActive.menuActive ? 'active' : ''}`}>   
 
         <img 
           className="bg" 
@@ -38,7 +40,6 @@ function App() {
 
         <div className="overlay"></div>
 
-        <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
 
             <Route path='/' 
@@ -59,8 +60,8 @@ function App() {
                 />}/>
 
           </Routes>
-        </AnimatePresence>
       </section>
+        </AnimatePresence>
       <Menu />
     </section>
   )
