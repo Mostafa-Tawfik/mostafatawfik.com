@@ -24,7 +24,7 @@
 
 body {
   background: rgb(0, 0, 0);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .showcase {
@@ -43,7 +43,7 @@ body {
 }
 
 .showcase.active {
-  transform: translateX(-300px);
+  right: 300px;
 }
 
 .showcase header {
@@ -329,8 +329,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(300px);
-  transition: 0.7s;
+  /* transform: translateX(300px); */
+  /* transition: 0.7s; */
 }
 
 .menu ul {
@@ -351,6 +351,18 @@ body {
 /* =============
     about page
 ================*/
+
+.about-header {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-header-desc {
+  width: 500px;
+}
 
 .showcase.about {
   display: block;
@@ -575,11 +587,10 @@ h2.head-title {
     font-size: 1.1em;
   }
   .showcase.active {
-    transform: translateX(-205px);
+    right: 205px;
   }
   .menu {
     width: 205px;
-    transform: translateX(205px);
   }
   .social.vertical {
     position: relative;
@@ -671,7 +682,6 @@ h2.head-title {
   }
   .menu {
     width: 205px;
-    transform: translateX(205px);
   }
   .social.vertical {
     position: relative;

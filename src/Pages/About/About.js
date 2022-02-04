@@ -9,8 +9,13 @@ export default function About(props) {
 
   return <div>
     <Header {...props}/>
-    <Menu />
+    <div className='about-header'>
+      <div className='about-header-desc'>
+        <h1>Hi I'm Mostafa</h1>
+        <p>A Frontend web developer and UI/UX designer well-versed in Scrum and Agile with experience in building and designing static and dynamic responsive web applications with JavaScript / React / SASS / Tailwind and other libraries like Framer Motion and Lottie.</p>
+      </div>
+      <DisplayLottie lottiePath= {development} />
+    </div>
     <SocialLinks />
-    <DisplayLottie lottiePath= {development} />
   </div>;
 }

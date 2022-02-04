@@ -6,7 +6,6 @@ import SocialLinks from '../components/SocialLinks';
 export default function Portfolio(props) {
   return <div>
     <Header {...props}/>
-    <Menu />
     <SocialLinks/>
   </div>;
 }
