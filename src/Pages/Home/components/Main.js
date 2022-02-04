@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Main() {
   return <div>
@@ -10,10 +11,10 @@ export default function Main() {
           simple, and fully responsive static and dynamic websites, I
           build with CMS and build from scratch,
           make and modify UI designs to enhance the brand identity.</p>
-      <a href="#0" className="more">More about
-          me</a>
-      <a href="#0" className="port">Recent
-          projects</a>
+      <Link to={'/About'} className="more">More about
+          me</Link>
+      <Link to={'/Portfolio'} className="port">Recent
+          projects</Link>
     </div>
   </div>;
 }

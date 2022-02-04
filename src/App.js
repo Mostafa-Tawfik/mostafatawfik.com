@@ -8,7 +8,6 @@ import { AnimatePresence } from "framer-motion"
 
 function App() {
 
-
   const [isActive, setIsActive] = React.useState({
     menuActive: false,
   })
@@ -23,11 +22,8 @@ function App() {
     })
   }
 
-
   // switch pages animations
   const location = useLocation()
-
-
 
   return (
     <section 
@@ -42,7 +38,6 @@ function App() {
       <div className="overlay"></div>
 
       <AnimatePresence exitBeforeEnter>
-
         <Routes location={location} key={location.pathname}>
 
           <Route path='/' 
@@ -63,9 +58,7 @@ function App() {
               />}/>
 
         </Routes>
-
       </AnimatePresence>
-
     </section>
   )
 }
