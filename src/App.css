@@ -268,6 +268,12 @@ body {
     color: var(--clr-light);
 }
 
+.myResume {
+  padding: 0.5em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
 /* scroll to top button */
 .upBtn {
   position: fixed;
@@ -356,12 +362,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-width: 80vw;
+  min-height: 80vh;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .about-header-desc {
   width: 500px;
+  z-index: 10;
+}
+
+.about-stack {
+  background: rgba(255, 255, 255, 0.05);
+  min-height: 80vh;
 }
 
 .showcase.about {
@@ -558,6 +572,10 @@ h2.head-title {
 }
 
 @media (max-width: 798px) {
+  .about-header-desc {
+    width: 300px;
+    z-index: 10;
+  }
   .showcase,
   .showcase header {
     padding: 40px;
