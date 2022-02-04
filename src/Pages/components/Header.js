@@ -58,8 +58,6 @@ export default function Header(props) {
     return props.toggleNextPage
   }
   
-  console.log(props.isActive);
-
   return <div>
     <header>
       <h2 className={isLogo ? 'logo' : 'logo homePage'} onClick={toggleLogo}>
@@ -74,20 +72,13 @@ export default function Header(props) {
 
       <div className="header-holder">
 
-        <Link
-          to={`${switchPage.prevPage}`}
-          onClick={(e)=> delayAndGo(e, `${switchPage.prevPage}`)}>          
+        <Link to={`${switchPage.prevPage}`}>          
           <img src='./images/previous.png' className='before' width="35px" alt="previous page button"></img>
         </Link> 
 
         <button className={props.isActive.menuActive ? 'toggle active' : 'toggle'} onClick={props.toggle}></button>
 
-        <Link
-          to={`${switchPage.nextPage}`}
-          onClick={(e) => {
-            props.toggleNextPage()
-            delayAndGo(e, `${switchPage.prevPage}`)
-          }}>          
+        <Link to={`${switchPage.nextPage}`}>          
           <img src='./images/next.png' className='next' width="35px" alt="next page button"></img>
         </Link>         
 

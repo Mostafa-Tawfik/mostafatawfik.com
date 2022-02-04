@@ -1,16 +1,16 @@
-import React from 'react';
-import './App.css';
-import Home from './Pages/Home/Home';
-import About from './Pages/About/About';
+import React from 'react'
+import './App.css'
+import Home from './Pages/Home/Home'
+import About from './Pages/About/About'
 import Portfolio from './Pages/Portfolio/Portfolio'
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, useLocation} from 'react-router-dom'
+import { AnimatePresence } from "framer-motion"
 
 function App() {
 
 
   const [isActive, setIsActive] = React.useState({
     menuActive: false,
-    nextPageActive: false,
   })
 
   // toggle menu
@@ -23,29 +23,49 @@ function App() {
     })
   }
 
-  // toggle next
-  function toggleNextPage() {
-    setIsActive(prev => {
-      return {
-        ...prev,
-        nextPageActive: !isActive.nextPageActive
-      }
-    })
-  }
+
+  // switch pages animations
+  const location = useLocation()
+
+
 
   return (
-    <section className={isActive.menuActive ? 'showcase active' : 'showcase'}>
+    <section 
+      className={`showcase ${isActive.menuActive ? 'active' : ''}`}
+      >
+
       <img 
         className="bg" 
         src="./images/quinton-coetzee-unsplash.webp"
         alt="keyboard background"></img>
+
       <div className="overlay"></div>
-      <Routes>
-        <Route path='/' element={<Home isActive={isActive} toggleNextPage={toggleNextPage} toggle={toggleMenu}/>}/>
-        <Route path='/About' element={<About isActive={isActive} toggleNextPage={toggleNextPage} toggle={toggleMenu}/>}/>
-        <Route path='/Portfolio' element={<Portfolio isActive={isActive} toggleNextPage={toggleNextPage} toggle={toggleMenu}/>}/>
-      </Routes>
-      
+
+      <AnimatePresence exitBeforeEnter>
+
+        <Routes location={location} key={location.pathname}>
+
+          <Route path='/' 
+            element={<Home 
+              isActive={isActive} 
+              toggle={toggleMenu}
+              />}/>
+
+          <Route path='/About' 
+            element={<About 
+              isActive={isActive} toggle={toggleMenu}
+              />}/>
+
+          <Route path='/Portfolio' 
+            element={<Portfolio 
+              isActive={isActive} 
+              toggle={toggleMenu}
+              />}/>
+
+        </Routes>
+
+      </AnimatePresence>
+
     </section>
   )
 }
