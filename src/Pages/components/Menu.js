@@ -14,6 +14,12 @@ export default function Menu() {
         </li>
         <li>
           <Link
+          to={'/Services'}
+          className="menuLi"
+          >Services</Link>
+        </li>
+        <li>
+          <Link
           to={'/About'}
           className="menuLi"
           >About Me</Link>
@@ -24,8 +30,6 @@ export default function Menu() {
           className="menuLi"
           >Portfolio</Link>
         </li>
-        {/* <!-- <li><a href="#">Contact</a></li> -->
-        <!-- <li><a href="#">Credits</a></li> --> */}
       </ul>
     </div>
   </div>;

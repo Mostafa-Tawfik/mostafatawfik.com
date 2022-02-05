@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import stack from '../../Lottie/stack.json'
-import AboutData from '../AboutData'
+import AboutData from '../../../AboutData'
 import { Icon } from '@iconify/react'
 import DisplayLottie from '../../components/DisplayLottie'
 import { motion } from 'framer-motion'

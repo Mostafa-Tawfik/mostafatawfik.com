@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AboutData from '../AboutData';
+import AboutData from '../../../AboutData';
 
 export default function Education() {
   return <section className='education'>

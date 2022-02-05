@@ -3,6 +3,7 @@ import './App.css'
 import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
 import Portfolio from './Pages/Portfolio/Portfolio'
+import Services from './Pages/Services/Services'
 import {Routes, Route, useLocation} from 'react-router-dom'
 import { AnimatePresence } from "framer-motion"
 import Menu from './Pages/components/Menu'
@@ -50,11 +51,18 @@ function App() {
 
             <Route path='/About' 
               element={<About 
-                isActive={isActive} toggle={toggleMenu}
+                isActive={isActive} 
+                toggle={toggleMenu}
                 />}/>
 
             <Route path='/Portfolio' 
               element={<Portfolio 
+                isActive={isActive} 
+                toggle={toggleMenu}
+                />}/>
+
+            <Route path='/Services' 
+              element={<Services 
                 isActive={isActive} 
                 toggle={toggleMenu}
                 />}/>

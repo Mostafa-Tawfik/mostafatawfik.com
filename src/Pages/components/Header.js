@@ -28,14 +28,20 @@ export default function Header(props) {
       } else if (location.pathname === '/About') {
         return { 
           prev,
-          nextPage: '/Portfolio',
+          nextPage: '/Services',
           prevPage: '/'
+        }
+      } else if (location.pathname === '/Services') {
+        return { 
+          prev,
+          nextPage: '/Portfolio',
+          prevPage: '/About'
         }
       } else if (location.pathname === '/Portfolio') {
         return { 
           prev,
           nextPage: '/',
-          prevPage: '/About'
+          prevPage: '/Services'
         }
       }
     })
