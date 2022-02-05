@@ -779,6 +779,33 @@ h2.head-title {
   .stack-holder {
     display: block;
   }
+  .services{
+    align-items: flex-start;
+  }
+
+  .services-title{
+    margin-top: 5em;
+  }
+  .services-title, .Services-desc {
+    font-size: 1.1rem;
+  }
+  .lottie-holder{
+    margin-top: 0;
+  }
+  .services-card-title{
+    font-size: 1.3rem;
+  }
+  .services-card{
+    width: 300px;
+    height: min-content;
+  }
+  .services-card-desc{
+    font-size: 1rem;
+  }
+  .services-cards-holder{
+    flex-direction: column;
+    width: min-content;
+  }
 
   .text h2 {
     font-size: 3em;
