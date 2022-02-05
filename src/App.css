@@ -268,10 +268,16 @@ body {
     color: var(--clr-light);
 }
 
+/* myResume */
 .myResume {
   padding: 0.5em;
   margin-top: 1em;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.myResume:hover {
+  transform: scale(1.1);
 }
 
 /* scroll to top button */
@@ -358,14 +364,14 @@ body {
     about page
 ================*/
 
+/* About Header */
 .about-header {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 80vh;
+  min-height: 66vh;
   justify-content:space-evenly;
   align-items: center;
-  z-index: 10;
 }
 
 .about-header-desc {
@@ -377,10 +383,26 @@ body {
   font-size: 4rem;
 }
 
-
+/* About Stack */
 .about-stack {
   background: rgba(255, 255, 255, 0.05);
   width: 100%;
+  min-height: 66vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-title {
+  font-size: 4rem;
+  z-index: 10;
 }
 
 .stackSet-holder{
@@ -399,6 +421,74 @@ body {
   z-index: 10;
 }
 
+/* About Education */
+.education {
+  width: 100%;
+  min-height: 66vh;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin-top: 3em;
+}
+
+.education-card-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.education-title {
+  font-size: 4rem;
+  z-index: 10;
+}
+
+.education-card {
+  width: 350px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  z-index: 10;
+  padding: 2em;
+  border-radius: 10%;
+}
+
+.education-card-title {
+  z-index: 10;
+  font-size: 1.5rem;
+  height: 90px;
+}
+
+.education-card-dates {
+  margin-top: 1em;
+}
+
+.education-card-desc {
+  z-index: 10;
+  font-size: 1rem;
+  
+}
+
+.education-card-btn-holder {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+}
+
+.edu-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+
+/* old about */
 .showcase.about {
   display: block;
 }
@@ -596,7 +686,7 @@ h2.head-title {
   .about-header-desc {
     width: 300px;
     z-index: 10;
-    margin-top: 4em;
+    margin-top: 5em;
   }
   .stackSet *, h2{
     height: 70px;
@@ -621,11 +711,21 @@ h2.head-title {
     font-size: 2rem;
   }
 
+  .stack-title {
+    font-size: 2rem;
+  }
+
+  .stack-holder {
+    display: block;
+  }
+
   .text h2 {
     font-size: 3em;
+    margin-top: 1em;
   }
   .text h3 {
     font-size: 2em;
+    margin-top: 1em;
   }
   .text h4 {
     font-size: 1.6em;
@@ -691,6 +791,13 @@ h2.head-title {
   }
   .social img {
     width: 30px;
+  }
+  .education-card {
+    width: 300px;
+  }
+  .education-card-title {
+    font-size: 1rem;
+    height: 60px;
   }
 }
 

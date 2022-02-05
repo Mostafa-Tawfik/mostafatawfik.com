@@ -1,18 +1,17 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Header from '../components/Header';
 import SocialLinks from '../components/SocialLinks';
 import DisplayLottie from '../components/DisplayLottie';
 import development from '../Lottie/development.json'
-import stack from '../Lottie/stack.json'
 import { motion } from 'framer-motion';
-import AboutData from './AboutData'
-import { Icon } from '@iconify/react';
+import Education from './components/Education';
+import MyStack from './components/MyStack';
 
 
 export default function About(props) {
   const pageMotion= {
     initial: { opacity: 0, x: 0 },
-    animate: { opacity: 1, x: 0, transition: { duration: 3 } },
+    animate: { opacity: 1, x: [0, 80, 0], transition: { duration: 3 } },
     exit: { opacity: 0, x: 0, transition: { duration: 3 } }
   }
   return <div>
@@ -31,30 +30,14 @@ export default function About(props) {
           <button onClick={() => {
             window.open("http://google.com", "_blank")}} className="myResume">My Resume</button>
         </div>
-          <DisplayLottie lottiePath= {development} />
+          <DisplayLottie lottiePath= {development} height={400} />
         </section>
-        <section className='about-stack'>
-          <DisplayLottie lottiePath= {stack} />
-          <div className='stackSet-holder'>
-            {AboutData.myStack.map((stack, i)=> {
-              return (
-                <Fragment key={stack.name}>
-                  <motion.div className='stackSet'
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9, borderRadius: "100%" }}>
-                    <Icon icon={stack.url} style={{fontSize: '80px'}} />
-                    <h2>{stack.name}</h2>
-                  </motion.div>
-                  
-                  
-                </Fragment>
-              )
-            })}
-          </div>
-        </section>
+        
+        <MyStack />
+        <Education />
       </section>
 
-    <SocialLinks />
     </motion.div>
+    <SocialLinks />
   </div>;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLottie } from 'lottie-react'
 
-export default function DisplayLottie({lottiePath}) {
+export default function DisplayLottie({lottiePath, height}) {
     const options = {
       loop: true,
       autoplay: true,
@@ -9,7 +9,7 @@ export default function DisplayLottie({lottiePath}) {
     }
 
     const style = {
-      height: 300,
+      height: height,
     };
 
     const { View } = useLottie(options, style);
