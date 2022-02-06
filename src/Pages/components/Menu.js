@@ -14,15 +14,15 @@ export default function Menu() {
         </li>
         <li>
           <Link
-          to={'/Services'}
-          className="menuLi"
-          >Services</Link>
-        </li>
-        <li>
-          <Link
           to={'/About'}
           className="menuLi"
           >About Me</Link>
+        </li>
+        <li>
+          <Link
+          to={'/Services'}
+          className="menuLi"
+          >Services</Link>
         </li>
         <li>
         <Link

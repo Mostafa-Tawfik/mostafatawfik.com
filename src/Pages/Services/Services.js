@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import SocialLinks from '../components/SocialLinks';
-import AboutData from '../../AboutData';
+import AppData from '../../AppData';
 import { motion } from 'framer-motion';
 import DisplayLottie from '../components/DisplayLottie';
 import DESIGN from '../Lottie/DESIGN.json'
@@ -29,7 +29,7 @@ export default function Services(props) {
             <DisplayLottie lottiePath={DESIGN} height={400} />
           </div>
           <section className='services-cards-holder'>
-            {AboutData.services.map(serv => {
+            {AppData.services.map(serv => {
               return (
                 <div key={serv.id} className='services-card'>
                   <Icon icon={serv.icon} style={{fontSize: '80px'}} />

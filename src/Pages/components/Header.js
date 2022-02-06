@@ -76,6 +76,15 @@ export default function Header(props) {
         </Link> 
       </h2>
 
+      <div className='navbar'>
+        <ul className='navbar-list'>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Portfolio</li>
+        </ul>
+      </div>
+
       <div className="header-holder">
 
         <Link to={`${switchPage.prevPage}`}>          

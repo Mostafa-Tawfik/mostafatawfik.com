@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import stack from '../../Lottie/stack.json'
-import AboutData from '../../../AboutData'
+import AppData from '../../../AppData'
 import { Icon } from '@iconify/react'
 import DisplayLottie from '../../components/DisplayLottie'
 import { motion } from 'framer-motion'
@@ -11,7 +11,7 @@ export default function MyStack() {
     <div className='stack-holder'>
       <DisplayLottie lottiePath= {stack} className='stack-lottie'/>
       <div className='stackSet-holder'>
-        {AboutData.myStack.map((stack, i)=> {
+        {AppData.myStack.map((stack, i)=> {
           return (
             <Fragment key={stack.name}>
               <motion.div className='stackSet'

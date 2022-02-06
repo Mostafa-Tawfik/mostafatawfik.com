@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AboutData from '../../../AboutData';
+import AppData from '../../../AppData';
 
 export default function Education() {
   return <section className='education'>
@@ -8,7 +8,7 @@ export default function Education() {
       <h1>Education</h1>
     </div>
     <section className='education-card-holder'>
-      {AboutData.education.map(edu => {
+      {AppData.education.map(edu => {
         return (
           <motion.div key={edu.id} className='education-card'
             whileHover={{scale: 1.1, transition: {duration: 0.5}}}>

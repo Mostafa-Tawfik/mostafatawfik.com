@@ -116,5 +116,45 @@ export default {
       icon: 'whh:seo',
       desc: 'Expand your target audiences, improve your brand awareness and boost Your credibility. A website with high seo rank is typically considered high-quality and trustworthy by search engines.'
     },
+  ],
+  Projects: [
+    {
+      id: 1,
+      title: 'My Reads',
+      desc: 'A bookshelf app that allows you to select and categorize books.',
+      url: 'https://my-reads-beta.vercel.app/',
+      image: '../../images/myReads.webp'
+    },
+    {
+      id: 2,
+      title: 'My Website',
+      desc: `My portfolio website, a full responsive multiple pages
+      built and designed from scratch.`,
+      url: 'https://www.mostafatawfik.com/',
+      image: '../../images/mt.jpg'
+    },
+    {
+      id: 3,
+      title: 'Dymanic Landing Page',
+      desc: `A multi-section landing page that dynamically updates
+      the navigational menu based on sections amount.`,
+      url: 'https://landingpage-chi-six.vercel.app/',
+      image: '../../images/landingPage.webp'
+    },
+    {
+      id: 4,
+      title: 'Weather Journal App',
+      desc: `An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.`,
+      url: 'https://mt-weather-journal-app.herokuapp.com/',
+      image: '../../images/weatherApp.webp'
+    },
+    {
+      id: 5,
+      title: 'My Games',
+      desc: `A mockup design for gaming store, build it with pure
+      HTML and CSS.`,
+      url: 'https://50-fivers-games.vercel.app/',
+      image: '../../images/myGames.jpg'
+    },
   ]
 } 
