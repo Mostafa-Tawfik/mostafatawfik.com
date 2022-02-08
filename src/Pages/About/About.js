@@ -1,7 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
-import SocialLinks from '../components/SocialLinks';
-import DisplayLottie from '../components/DisplayLottie';
+import DisplayLottie from '../../components/DisplayLottie';
 import development from '../Lottie/development.json'
 import { motion } from 'framer-motion';
 import Education from './components/Education';
@@ -15,14 +13,13 @@ export default function About(props) {
     exit: { opacity: 0, x: 0, transition: { duration: 3 } }
   }
   return <div>
-    <Header {...props}/>
     <motion.div
           initial='initial'
           animate='animate'
           exit='exit'
           variants={pageMotion}
         >
-      <section className='about'>
+      <section className='about' id='about'>
         <section className='about-header'>
         <div className='about-header-desc'>
           <h1>Hi I'm Mostafa</h1>
@@ -38,6 +35,5 @@ export default function About(props) {
       </section>
 
     </motion.div>
-    <SocialLinks />
   </div>;
 }

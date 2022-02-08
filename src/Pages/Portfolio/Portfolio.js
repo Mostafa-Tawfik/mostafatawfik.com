@@ -1,17 +1,14 @@
 import React from 'react';
-import Header from '../components/Header';
-import SocialLinks from '../components/SocialLinks';
 import { motion } from 'framer-motion';
 import AppData from '../../AppData';
 
 export default function Portfolio(props) {
   const pageMotion= {
     initial: { opacity: 0, x: 0 },
-    animate: { opacity: 1, x: [0, 80, 0], transition: { duration: 1 } },
+    animate: { opacity: 1, y: [100, 0], transition: { duration: 1 } },
     exit: { opacity: 0, x: 0, transition: { duration: 1 } }
   }
   return <div>
-    <Header {...props}/>
     <motion.div
           initial='initial'
           animate='animate'
@@ -36,6 +33,5 @@ export default function Portfolio(props) {
         </div>
 
     </motion.div>
-    <SocialLinks/>
   </div>;
 }

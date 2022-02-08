@@ -1,12 +1,9 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 import Home from './Pages/Home/Home'
-import About from './Pages/About/About'
-import Portfolio from './Pages/Portfolio/Portfolio'
-import Services from './Pages/Services/Services'
 import {Routes, Route, useLocation} from 'react-router-dom'
 import { AnimatePresence } from "framer-motion"
-import Menu from './Pages/components/Menu'
+// import Menu from './components/Menu'
 
 function App() {
 
@@ -34,12 +31,12 @@ function App() {
       <section 
       className={`showcase ${location.pathname.split('/')[1].toLowerCase()} ${isActive.menuActive ? 'active' : ''}`}>   
 
-        <img 
+        {/* <img 
           className="bg" 
           src="./images/quinton-coetzee-unsplash.webp"
           alt="keyboard background"></img>
 
-        <div className="overlay"></div>
+        <div className="overlay"></div> */}
 
           <Routes location={location} key={location.pathname}>
 
@@ -49,28 +46,10 @@ function App() {
                 toggle={toggleMenu}
                 />}/>
 
-            <Route path='/About' 
-              element={<About 
-                isActive={isActive} 
-                toggle={toggleMenu}
-                />}/>
-
-            <Route path='/Portfolio' 
-              element={<Portfolio 
-                isActive={isActive} 
-                toggle={toggleMenu}
-                />}/>
-
-            <Route path='/Services' 
-              element={<Services 
-                isActive={isActive} 
-                toggle={toggleMenu}
-                />}/>
-
           </Routes>
       </section>
         </AnimatePresence>
-      <Menu />
+      {/* <Menu /> */}
     </section>
   )
 }

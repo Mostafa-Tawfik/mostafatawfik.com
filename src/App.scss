@@ -1,21 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+// improt glabal rules
+@import './layout/_global-rules';
 
-/* =========
-    global
-============*/
+// import color var
+@import './colors/colors';
 
-:root {
-  --clr-main: rgb(221, 135, 22);
-  --clr-light: rgb(255, 255, 255);
-  --clr-dark: rgb(17, 17, 17);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
+// import home page
+@import './Pages/Home/Home';
 
 
 /* ===============
@@ -24,150 +14,8 @@
 
 body {
   background: rgb(0, 0, 0);
-  /* overflow: hidden; */
 }
 
-.showcase {
-  position: absolute;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--clr-dark);
-  color: var(--clr-light);
-  z-index: 2;
-  transition: 0.7s;
-}
-
-.showcase.active {
-  right: 300px;
-}
-
-.showcase header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo {
-  display: inline-block;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.logo a {
-  text-decoration: none;
-  color: var(--clr-light);
-}
-
-.showcase .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.3;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #434343;
-  mix-blend-mode: overlay;
-  filter: saturate(4);
-  filter: contrast(1.2);
-}
-
-.text {
-  position: relative;
-  z-index: 10;
-}
-
-.innertext {
-  justify-content: left;
-}
-
-.text h2 {
-  font-size: 5em;
-  font-weight: 800;
-  line-height: 1em;
-  text-transform: uppercase;
-  color: var(--clr-main);
-}
-
-.text h3 {
-  font-size: 4em;
-  font-weight: 700;
-  line-height: 1em;
-  text-transform: uppercase;
-  color: rgb(224, 162, 80);
-}
-
-.text h4 {
-  font-size: 3em;
-  font-weight: 600;
-  line-height: 1em;
-  text-transform: uppercase;
-  color: rgb(222, 184, 135);
-}
-
-.text h5 {
-  font-size: 1.5em;
-  font-weight: 500;
-  line-height: 1em;
-  text-transform: uppercase;
-  margin: 20px 0 5px 0;
-  color: rgb(219, 197, 166);
-}
-
-.text h6 {
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1em;
-  text-transform: uppercase;
-  color: rgb(221, 206, 186);
-}
-
-.text p {
-  margin: 20px 0;
-  font-weight: 400;
-  max-width: 700px;
-}
-
-.text a {
-  display: inline-block;
-  font-size: 1em;
-  background: var(--clr-light);
-  padding: 10px 30px;
-  text-decoration: none;
-  color: var(--clr-dark);
-  margin-top: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.2s;
-}
-
-.text a:hover {
-  letter-spacing: 6px;
-}
 
 /* ==============
     buttons
@@ -331,15 +179,27 @@ body {
     navbar
 ============*/
 
-.navbar-list{
+.navbar-list {
   display: flex;
   gap: 1em;
-  list-style: none;
-  /* border: #434343 solid 1px; */
   padding: 1em;
   width: 350px;
   justify-content: center;
   align-items: center;
+  font-size: 1.3rem;
+}
+
+.navbar-list-items {
+  list-style: none;
+  color: var(--clr-light);
+  text-decoration-line: none;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.navbar-list-items:hover {
+  transform: scale(1.02);
+  color: var(--clr-main);
 }
 
 /* =========
@@ -385,12 +245,13 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 10;
+  margin: 10em 0;
 }
 
 .services-title {
   font-size: 3rem;
   z-index: 10;
-  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .Services-desc {
@@ -401,7 +262,7 @@ body {
 
 .services-cards-holder {
   display: flex;
-  width: 90vw;
+  width: 80vw;
   justify-content: space-evenly;
   align-items: center;
   gap: 2em;
@@ -429,7 +290,7 @@ body {
 
 .lottie-holder {
   display: flex;
-  width: 90vw;
+  width: 80vw;
   gap: 2em;
   justify-content: space-evenly;
   align-items: center;
@@ -439,6 +300,7 @@ body {
 /* =============
     about page
 ================*/
+
 
 /* About Header */
 .about-header {
@@ -461,7 +323,6 @@ body {
 
 /* About Stack */
 .about-stack {
-  background: rgba(255, 255, 255, 0.05);
   width: 100%;
   min-height: 66vh;
   display: flex;
@@ -507,7 +368,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3em;
-  margin-top: 3em;
+  margin: 3em 0 5em 0;
 }
 
 .education-card-holder {
@@ -648,6 +509,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin: 10em 0;
 }
 
 .card-holder {
@@ -693,9 +555,12 @@ body {
   
 }
 
-@media (max-width: 798px) {
+@media (max-width: 800px) {
+  .divider-section:after {
+    width: 200px;
+  }
   .about-header-desc {
-    width: 300px;
+    width: 80vw;
     z-index: 10;
     margin-top: 5em;
   }
@@ -704,10 +569,6 @@ body {
     font-size: 15px;
   }
 
-  .showcase,
-  .showcase header {
-    padding: 40px;
-  }
   .card-holder {
     margin-top: 2em;
   }
@@ -721,7 +582,10 @@ body {
   .about-header-desc h1 {
     font-size: 2rem;
   }
+  .about-stack{
+    margin: 6em 0;
 
+  }
   .stack-title {
     font-size: 2rem;
   }
@@ -729,15 +593,14 @@ body {
   .stack-holder {
     display: block;
   }
-  .services{
-    align-items: flex-start;
-  }
-
   .services-title{
     margin-top: 5em;
   }
-  .services-title, .Services-desc {
-    font-size: 1.1rem;
+  .services-title{
+    font-size: 2rem;
+  } 
+  .Services-desc {
+    font-size: 1rem;
   }
   .lottie-holder{
     margin-top: 0;
@@ -754,11 +617,10 @@ body {
   }
   .services-cards-holder{
     flex-direction: column;
-    width: min-content;
   }
 
   .text h2 {
-    font-size: 3em;
+    font-size: 2.8em;
     margin-top: 1em;
   }
   .text h3 {
@@ -780,7 +642,7 @@ body {
   .menu {
     width: 205px;
   }
-  .social.vertical {
+  /* .social.vertical {
     position: relative;
     top: 0%;
     bottom: 0px;
@@ -789,7 +651,7 @@ body {
     justify-content: left;
     flex-direction: row;
     align-items: center;
-  }
+  } */
   .mypicdiv {
     width: 100%;
     display: flex;
@@ -799,9 +661,57 @@ body {
   h2.head-title {
     font-size: 1.1em;
   }
+  .education-card {
+    width: 250px;
+    height: 400px;
+  }
+  .education-card-title {
+    font-size: 1.1rem;
+  }
+  .education-card-title-desc {
+    font-size: 0.9rem;
+  }
+  .education-card-desc{
+    font-size: 0.7rem;
+  }
+  .card-section {
+    margin: 0;
+  }
+  .card-holder{
+    width: 250px;
+  }
+  .card {
+    width: 250px;
+    height: 350px;
+  }
+  .card-title{
+    font-size: 1.2rem;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 440px) {
+  .homeSection{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 80vw; */
+    padding: 0 3em;
+  }
+  .navbar {
+    display: none;
+  }
+  .divider-section:after{
+    width: 10px;
+  }
+  .services{
+    margin: 1em 0em;
+  }
+  .services-title,.stack-title{
+    font-size: 1.5rem;
+  }
+  .Services-desc{
+    font-size: 0.9rem;
+  }
   .showcase,
   .showcase header {
     padding: 20px;

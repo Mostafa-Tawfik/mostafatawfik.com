@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 export default function Main() {
-  return <div>
+  return <div className='homeSection'>
+    <img className='myLogo' alt='myLogo' src='../../images/logo.jpg'></img>
     <div className="text">
       <h2>Front-End Developer</h2>
       <h3>UX/UI Designer</h3>
