@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function SocialLinks() {
+export default function SocialLinks(props) {
   return <div>
-    <ul className="social vertical">
+    <ul className={`social vertical ${props.isActive.menuActive ? 'active' : ''}`}>
       <li><a 
           href="https://twitter.com/Mostafa__Tawfik" 
           target="_blank "

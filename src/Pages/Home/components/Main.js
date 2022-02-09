@@ -12,9 +12,9 @@ export default function Main() {
           simple, and fully responsive static and dynamic websites, I
           build with CMS and build from scratch,
           make and modify UI designs to enhance the brand identity.</p>
-      <Link to={'/About'} className="more">More about
+      <Link to={'/about'} className="more">More about
           me</Link>
-      <Link to={'/Portfolio'} className="port">Recent
+      <Link to={'/portfolio'} className="port">Recent
           projects</Link>
     </div>
   </div>;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../../components/Header';
 import AppData from '../../AppData';
 import { motion } from 'framer-motion';
 import DisplayLottie from '../../components/DisplayLottie';
@@ -13,13 +14,18 @@ export default function Services(props) {
   }
 
   return <div>
-    {/* <Header {...props}/> */}
+    <Header {...props}/>
     <motion.div
           initial='initial'
           animate='animate'
           exit='exit'
           variants={pageMotion}
         >
+        <div className='divider'>
+          <h2 className='divider-section'>SERVICES</h2>
+          <hr></hr>
+        </div>
+        
         <section className='services'>
           <h1 className='services-title'>How Can I Help You</h1>
           <p className='Services-desc'>In the world of mass production, unique quality has an increasing value. Overtake your rivals, stand out from the crowd and take the advantage of the UX based minimalist design with an effiecnt, high-performance web applications.</p>
@@ -43,5 +49,6 @@ export default function Services(props) {
           </section>
         </section>
       </motion.div>
+      
   </div>;
 }

@@ -10,12 +10,11 @@ export default function Education() {
     <section className='education-card-holder'>
       {AppData.education.map(edu => {
         return (
-          <motion.div key={edu.id} className='education-card'
-            whileHover={{scale: 1.1, transition: {duration: 0.5}}}>
+          <motion.div key={edu.id} className='education-card'>
             <h2 className='education-card-title'>{edu.title}</h2>
-            <h3 className='education-card-title-desc'>{edu.location}</h3>
-            <h4 className='education-card-title-desc'>{edu.field}</h4>
-            <h5 className='education-card-dates'>{edu.startDate} -{'>'} {edu.endDate}</h5>
+            <h5 className='education-card-title-desc'>{edu.location}</h5>
+            <h6 className='education-card-title-desc'>{edu.field}</h6>
+            <h6 className='education-card-dates'>{edu.startDate} -{'>'} {edu.endDate}</h6>
             <p className='education-card-desc'>{edu.desc}</p>
             <div className='education-card-btn-holder'>
               <button onClick={() => {

@@ -19,10 +19,6 @@ export default {
       url: "logos:javascript",
     },
     {
-      name: "TypeScript",
-      url: "logos:typescript-icon",
-    },
-    {
       name: "React",
       url: "vscode-icons:file-type-reactjs",
     },
@@ -81,7 +77,7 @@ export default {
       field: 'Web Development',
       startDate: 'Nov-2021',
       endDate: 'Dec-2021',
-      desc:'Building high-quality websites and dynamic applications using JavaScript and connect a web application to backend server data using JavaScript..',
+      desc:'Building high-quality websites and dynamic applications using JavaScript and connect a web application to backend server data using JavaScript.',
       credential: 'https://confirm.udacity.com/PFGT3GNC',
       more: 'https://egfwd.com/specializtion/professional-web-development/',
     },
@@ -123,7 +119,8 @@ export default {
       title: 'My Reads',
       desc: 'A bookshelf app that allows you to select and categorize books.',
       url: 'https://my-reads-beta.vercel.app/',
-      image: '../../images/myReads.webp'
+      image: '../../images/myReads.webp',
+      imageMobile: '../../images/myReadsM.png',
     },
     {
       id: 2,
@@ -131,7 +128,8 @@ export default {
       desc: `My portfolio website, a full responsive multiple pages
       built and designed from scratch.`,
       url: 'https://www.mostafatawfik.com/',
-      image: '../../images/mt.jpg'
+      image: '../../images/mtL.png',
+      imageMobile: '../../images/mtP.png',
     },
     {
       id: 3,
@@ -139,14 +137,16 @@ export default {
       desc: `A multi-section landing page that dynamically updates
       the navigational menu based on sections amount.`,
       url: 'https://landingpage-chi-six.vercel.app/',
-      image: '../../images/landingPage.webp'
+      image: '../../images/dynamicLandingPageL.png',
+      imageMobile: '../../images/dynamicLandingPageP.png',
     },
     {
       id: 4,
       title: 'Weather Journal App',
       desc: `An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.`,
       url: 'https://mt-weather-journal-app.herokuapp.com/',
-      image: '../../images/weatherApp.webp'
+      image: '../../images/weatherAppL.png',
+      imageMobile: '../../images/weatherAppP.png',
     },
     {
       id: 5,
@@ -154,7 +154,8 @@ export default {
       desc: `A mockup design for gaming store, build it with pure
       HTML and CSS.`,
       url: 'https://50-fivers-games.vercel.app/',
-      image: '../../images/myGames.jpg'
+      image: '../../images/myGamesL.png',
+      imageMobile: '../../images/myGames.jpg',
     },
   ]
 } 

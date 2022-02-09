@@ -18,7 +18,7 @@ export default function MyStack() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9, borderRadius: "100%" }}>
                 <Icon icon={stack.url} style={{fontSize: '80px'}} />
-                <h2>{stack.name}</h2>
+                <h5>{stack.name}</h5>
               </motion.div>
             </Fragment>
           )

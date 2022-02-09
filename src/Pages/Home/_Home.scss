@@ -19,10 +19,6 @@
   gap: 2em;
 }
 
-
-
-
-
 .myLogo{
   width: 300px;
   height: 300px;
@@ -52,12 +48,17 @@
   gap: 10em;
 }
 
+// header
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
   cursor: pointer;
+}
+
+.myname {
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-weight: 400;
 }
 
 .logo a {
@@ -160,29 +161,13 @@
   letter-spacing: 6px;
 }
 
-.downarrow {
-  color: $clr-main;
-  font-size: 3em;
-  left: 250px;
-  margin: 3em;
-}
 .divider {
   display: flex;
-  position: relative;
+  width: 80vw;
 }
 
 .divider-section {
-  margin: 1em;
+  margin-right: 1em;
   font-size: 3rem;
-}
-
-.divider-section:after {
-  content: "";
-  display: block;
-  width: 66%;
-  height: 2px;
-  background: $clr-light;
-  right: 1em;
-  top: 50%;
-  position: absolute;
+  color: $clr-main;
 }

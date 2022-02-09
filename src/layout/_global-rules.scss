@@ -1,6 +1,3 @@
-// import fonts
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-
 // global rules
 * {
   box-sizing: border-box;
@@ -11,6 +8,9 @@
 }
 
 // fonts
+P {
+  font-family: 'Josefin Sans', sans-serif;
+}
 h1 {
   font-size: 4.5rem;
 }
