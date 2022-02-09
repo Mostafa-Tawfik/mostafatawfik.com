@@ -1,0 +1,61 @@
+/* ====================
+    Services Page
+=======================*/
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.services-title {
+  font-size: 3rem;
+  z-index: 10;
+  margin: 3em 0 1em;
+  font-family: 'Redressed', cursive;
+}
+
+.Services-desc {
+  font-size: 2rem;
+  width: 80vw;
+  z-index: 10;
+}
+
+.services-cards-holder {
+  display: flex;
+  width: 80vw;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2em;
+}
+
+.services-card {
+  margin-top: 3em;
+  width: 30vw;
+  height: 500px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-card-title {
+  font-size: 2rem;
+  height: 80px;
+}
+
+.services-card-desc {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.lottie-holder {
+  display: flex;
+  width: 80vw;
+  gap: 2em;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3em;
+}

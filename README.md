@@ -5,4 +5,4 @@ My portfolio website, a full responsive multiple pages built and designed from s
 
 ## Preview
 
-![Alt Text](./img/mt.jpg?raw=true 'Project Preview')
+![Alt Text](mt.jpg?raw=true 'Project Preview')
