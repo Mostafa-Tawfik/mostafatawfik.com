@@ -71,7 +71,7 @@ export default function Header(props) {
         
       <Link
           to={'/'}
-          className={isLogo ? 'myname' : location.pathname !== '/' ? 'myname homePage' : 'home'}
+          className={isLogo ? 'myname' : location.pathname !== '/' ? 'myname homePage' : 'myname'}
           onClick={(e)=> delayAndGo(e, '/')}>          
           Mostafa Tawfik
         </Link> 
