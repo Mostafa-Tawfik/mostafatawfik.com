@@ -156,7 +156,7 @@ export default {
       HTML and CSS.`,
       url: 'https://50-fivers-games.vercel.app/',
       image: '../../images/myGamesL.png',
-      imageMobile: '../../images/myGames.jpg',
+      imageMobile: '../../images/myGamesL.png',
     },
   ]
 } 

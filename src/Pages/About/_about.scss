@@ -28,6 +28,7 @@
       margin-top: 1em;
       cursor: pointer;
       transition: 0.2s;
+      color: $clr-dark;
     }
 
     .myResume:hover {
@@ -151,6 +152,7 @@
     font-size: 0.7rem;
     transition: 0.5s;
     cursor: pointer;
+    color: $clr-dark;
   }
 
   .edu-btn:hover {
