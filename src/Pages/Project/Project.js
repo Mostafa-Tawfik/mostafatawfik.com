@@ -42,11 +42,9 @@ export default function Project(props) {
           variants={pageMotion}
         >
       <section className='project'>
-      {/* <img className='project-hero2' src='../../images/raw2.png' alt='hero'></img> */}
       <img className='project-hero2' src='../../images/raw3.png' alt='hero'></img>
 
         <section className='project-title'>
-          <img className='project-hero' src='../../images/raw.png' alt='hero'></img>
           <h1>{showProject.title}</h1>
           <p>{showProject.desc}</p>
         </section>
