@@ -75,8 +75,10 @@ export default function Project(props) {
           <section className='seemore'>
             <h1 className='seemore-title'>See More</h1>
             <div className='project-btn-holder'>
-              <button className='project-btn'>LIVE PREVIEW</button>
-              <button className='project-btn'>CODE LINK</button>
+              <button onClick={() => {
+              window.open(showProject.url)}}  className='project-btn'>LIVE PREVIEW</button>
+              <button onClick={() => {
+              window.open(showProject.git)}} className='project-btn'>CODE LINK</button>
             </div>
           </section>
         </section>

@@ -120,6 +120,7 @@ export default {
       title: 'My Reads',
       desc: 'A bookshelf app that allows you to select and categorize books.',
       url: 'https://my-reads-beta.vercel.app/',
+      git: 'https://github.com/Mostafa-Tawfik/My-Reads',
       image: '../../images/myReads.webp',
       imageMobile: '../../images/myReadsM.png',
       builtWith: ['HTML 5','CSS3', 'JavaScript', "React"],
@@ -131,8 +132,10 @@ export default {
       desc: `My portfolio website, a full responsive multiple pages
       built and designed from scratch.`,
       url: 'https://www.mostafatawfik.com/',
+      git: 'https://github.com/Mostafa-Tawfik/mostafatawfik.com',
       image: '../../images/mtL.png',
       imageMobile: '../../images/mtP.png',
+      builtWith: ['HTML 5','SASS', 'JavaScript', "React"],
     },
     {
       id: 3,
@@ -141,8 +144,10 @@ export default {
       desc: `A multi-section landing page that dynamically updates
       the navigational menu based on sections amount.`,
       url: 'https://landingpage-chi-six.vercel.app/',
+      git: 'https://github.com/Mostafa-Tawfik/Landingpage',
       image: '../../images/dynamicLandingPageL.png',
       imageMobile: '../../images/dynamicLandingPageP.png',
+      builtWith: ['HTML 5','CSS3', 'JavaScript',],
     },
     {
       id: 4,
@@ -150,8 +155,10 @@ export default {
       title: 'Weather Journal App',
       desc: `An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.`,
       url: 'https://mt-weather-journal-app.herokuapp.com/',
+      git: 'https://github.com/Mostafa-Tawfik/Weather-Journal-App',
       image: '../../images/weatherAppL.png',
       imageMobile: '../../images/weatherAppP.png',
+      builtWith: ['HTML 5','CSS3', 'JavaScript', "Node"],
     },
     {
       id: 5,
@@ -160,8 +167,10 @@ export default {
       desc: `A mockup design for gaming store, build it with pure
       HTML and CSS.`,
       url: 'https://50-fivers-games.vercel.app/',
+      git: 'https://github.com/Mostafa-Tawfik/my-games',
       image: '../../images/myGamesL.png',
-      imageMobile: '../../images/myGamesL.png',
+      imageMobile: '../../images/myGamesP.png',
+      builtWith: ['HTML 5','SASS', 'JavaScript', 'SASS'],
     },
   ]
 } 
