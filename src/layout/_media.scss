@@ -5,6 +5,23 @@
 /* turn on animation on hovering devices */
 @media (max-width: 800px) {
 
+  .project h1 {
+    font-size: 2rem;
+  }
+  .project-btn {
+    padding: 0.5em;
+  }
+  .project-overview p {
+      font-size: 1rem;
+  }
+
+  .project-overview, .builtwith, .seemore {
+    width: 80%;
+  }
+  .builtwith-stack *{
+    width: 100px;
+  }
+
   .card-section {
     margin: 0;
     .card-holder {
@@ -152,6 +169,9 @@
 }
 
 @media (max-width: 440px) {
+  .project-preview {
+    width: 90%;
+  }
   .showcase header {
     background-color: black;
     position: fixed;

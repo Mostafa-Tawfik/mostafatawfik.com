@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 export default function Menu(props) {
-  console.log(props)
   return <div>
     <div className='menu'>
       <ul>

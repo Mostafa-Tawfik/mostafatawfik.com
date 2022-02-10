@@ -37,12 +37,10 @@ function App() {
       <section 
       className={`showcase ${location.pathname.split('/')[1].toLowerCase()} ${isActive.menuActive ? 'active' : ''}`}>   
 
-        {/* <img 
+        <img 
           className="bg" 
-          src="./images/quinton-coetzee-unsplash.jpg"
+          src="./images/raw3.png"
           alt="keyboard background"></img>
-
-        <div className="overlay"></div> */}
 
           <Routes location={location} key={location.pathname}>
 
@@ -70,7 +68,7 @@ function App() {
                 toggle={toggleMenu}
                 />}/>
 
-            <Route path='/portfolio/:projectTitle' 
+            <Route path='/:projectTitle' 
               element={<Project 
                 isActive={isActive} 
                 toggle={toggleMenu}

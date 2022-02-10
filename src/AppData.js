@@ -122,9 +122,11 @@ export default {
       url: 'https://my-reads-beta.vercel.app/',
       image: '../../images/myReads.webp',
       imageMobile: '../../images/myReadsM.png',
+      builtWith: ['HTML 5','CSS3', 'JavaScript', "React"],
     },
     {
       id: 2,
+      path: 'mywebsite',
       title: 'My Website',
       desc: `My portfolio website, a full responsive multiple pages
       built and designed from scratch.`,
@@ -134,6 +136,7 @@ export default {
     },
     {
       id: 3,
+      path: 'dynamiclandingpage',
       title: 'Dymanic Landing Page',
       desc: `A multi-section landing page that dynamically updates
       the navigational menu based on sections amount.`,
@@ -143,6 +146,7 @@ export default {
     },
     {
       id: 4,
+      path: 'weatherjournalapp',
       title: 'Weather Journal App',
       desc: `An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.`,
       url: 'https://mt-weather-journal-app.herokuapp.com/',
@@ -151,6 +155,7 @@ export default {
     },
     {
       id: 5,
+      path: 'mygames',
       title: 'My Games',
       desc: `A mockup design for gaming store, build it with pure
       HTML and CSS.`,

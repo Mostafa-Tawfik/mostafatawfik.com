@@ -44,6 +44,12 @@ export default function Header(props) {
           nextPage: '/',
           prevPage: '/about'
         }
+      } else {
+        return {
+          prev,
+          nextPage: '/',
+          prevPage: '/portfolio'
+        }
       }
     })
   },[location]) 

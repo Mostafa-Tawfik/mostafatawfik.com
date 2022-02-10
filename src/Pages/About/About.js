@@ -26,7 +26,7 @@ export default function About(props) {
         <hr></hr>
       </div>
       
-      <section className='about' id='about'>
+      <section className='about-layout' id='about'>
         <section className='about-header'>
         <div className='about-header-desc'>
           <h1>Hi I'm Mostafa</h1>

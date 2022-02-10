@@ -26,7 +26,7 @@ export default function Portfolio(props) {
         <div className="card-section">
           {AppData.Projects.map(project => {
             return (
-              <Link to={`/portfolio/${project.path}`} key={project.id}>
+              <Link to={`/${project.path}`} key={project.id}>
                 <div className='card-holder' key={project.id}>
                   <div className='card-preview'>
                     <img src='../../images/mac-mockup.png' alt='preview' className='card-laptop'></img>

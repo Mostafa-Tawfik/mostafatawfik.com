@@ -19,9 +19,6 @@
 // import footer section
 @import './components/footer';
 
-// import media query
-@import './layout/media';
-
 // import menu
 @import './components/menu';
 
@@ -30,6 +27,9 @@
 
 // import project page
 @import './Pages/Project/project';
+
+// import media query
+@import './layout/media';
 
 /* ===============
     main section
@@ -211,9 +211,14 @@ body {
   color: $clr-main;
 }
 
-
-
-
-
-
-
+// bg
+.showcase .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.05;
+  z-index: -1;
+}
