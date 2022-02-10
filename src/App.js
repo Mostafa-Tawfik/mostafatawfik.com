@@ -4,6 +4,7 @@ import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
 import Portfolio from './Pages/Portfolio/Portfolio'
 import Services from './Pages/Services/Services'
+import Project from './Pages/Project/Project'
 import SocialLinks from './components/SocialLinks'
 import {Routes, Route, useLocation} from 'react-router-dom'
 import { AnimatePresence } from "framer-motion"
@@ -38,7 +39,7 @@ function App() {
 
         {/* <img 
           className="bg" 
-          src="./images/quinton-coetzee-unsplash.webp"
+          src="./images/quinton-coetzee-unsplash.jpg"
           alt="keyboard background"></img>
 
         <div className="overlay"></div> */}
@@ -69,13 +70,19 @@ function App() {
                 toggle={toggleMenu}
                 />}/>
 
+            <Route path='/portfolio/:projectTitle' 
+              element={<Project 
+                isActive={isActive} 
+                toggle={toggleMenu}
+                />}/>
+
           </Routes>
       <Footer />
       </section>
       </AnimatePresence>
       <SocialLinks isActive={isActive}/>
       <MediaQuery maxWidth={440}>
-        <Menu />
+        <Menu toggle={toggleMenu}/>
       </MediaQuery>
     </section>
   )

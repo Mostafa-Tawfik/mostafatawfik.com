@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import { motion } from 'framer-motion';
 import AppData from '../../AppData';
+import { Link } from 'react-router-dom';
 
 export default function Portfolio(props) {
   const pageMotion= {
@@ -25,20 +26,22 @@ export default function Portfolio(props) {
         <div className="card-section">
           {AppData.Projects.map(project => {
             return (
-              <div className='card-holder' key={project.id}>
-                <div className='card-preview'>
-                  <img src='../../images/mac-mockup.png' alt='preview' className='card-laptop'></img>
-                  <div className="card-image" style={{backgroundImage:`url(${project.image})`}}></div>
-                  <div className='card-preview-mobile'>
-                    <img src='../../images/iphone.png' alt='preview' className='card-mobile'></img>
-                    <div className="card-image-mobile" style={{backgroundImage:`url(${project.imageMobile})`}}></div>
+              <Link to={`/portfolio/${project.path}`} key={project.id}>
+                <div className='card-holder' key={project.id}>
+                  <div className='card-preview'>
+                    <img src='../../images/mac-mockup.png' alt='preview' className='card-laptop'></img>
+                    <div className="card-image" style={{backgroundImage:`url(${project.image})`}}></div>
+                    <div className='card-preview-mobile'>
+                      <img src='../../images/iphone.png' alt='preview' className='card-mobile'></img>
+                      <div className="card-image-mobile" style={{backgroundImage:`url(${project.imageMobile})`}}></div>
+                    </div>
+                  </div>
+                  <div className="card-content">
+                    <h2 className="card-title">{project.title}</h2>
+                    <p className="card-desc">{project.desc}</p>
                   </div>
                 </div>
-                <div className="card-content">
-                  <h2 className="card-title">{project.title}</h2>
-                  <p className="card-desc">{project.desc}</p>
-                </div>
-              </div>
+              </Link>
             )
           })}
         </div>

@@ -116,6 +116,7 @@ export default {
   Projects: [
     {
       id: 1,
+      path: 'myreads',
       title: 'My Reads',
       desc: 'A bookshelf app that allows you to select and categorize books.',
       url: 'https://my-reads-beta.vercel.app/',
