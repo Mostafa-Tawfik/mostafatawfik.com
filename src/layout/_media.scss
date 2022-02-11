@@ -7,15 +7,14 @@
 
   .project{
     .project-title {
-      margin-top: -1em;
-      height: 30vh;
+      height: 25vh;
     }
   }
   .project h1 {
     font-size: 2rem;
   }
   .project-btn {
-    padding: 0.5em;
+    color: $clr-dark;
   }
   .project-overview p {
       font-size: 1rem;
