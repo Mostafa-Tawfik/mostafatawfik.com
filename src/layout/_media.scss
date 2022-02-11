@@ -5,6 +5,12 @@
 /* turn on animation on hovering devices */
 @media (max-width: 800px) {
 
+  .project{
+    .project-title {
+      margin-top: -1em;
+      height: 30vh;
+    }
+  }
   .project h1 {
     font-size: 2rem;
   }
@@ -169,6 +175,13 @@
 }
 
 @media (max-width: 440px) {
+
+  .project{
+    .project-title {
+      margin-top: 2em;
+      height: 30vh;
+    }
+  }
   .project-preview {
     width: 90%;
   }
@@ -239,6 +252,10 @@
   }
   .card {
     transform: scale(0.8);
+  }
+  .text a {
+    padding: 5px 15px;
+    letter-spacing: 1px;
   }
   .text h2 {
     font-size: 2.5em;
