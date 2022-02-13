@@ -4,7 +4,6 @@ import Head from 'next/head'
 import { Fragment } from 'react'
 import { useRouter } from 'next/router'
 import { AnimatePresence } from "framer-motion"
-import MediaQuery from 'react-responsive'
 import Header from '../components/Header'
 // import Image from 'next/image'
 // import bg from '../public/images/raw3.png'

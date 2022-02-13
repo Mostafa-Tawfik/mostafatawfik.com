@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.scss'
 import { motion } from 'framer-motion';
 import Link from 'next/link'
 
-export default function Home(props) {
+export default function Home() {
   const pageMotion= {
     initial: { opacity: 0, x: 0 },
     animate: { opacity: 1, transition: { duration: 2 } },

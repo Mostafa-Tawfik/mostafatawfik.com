@@ -53,14 +53,78 @@
   transition: 5s;
 }
 
-.myname {
-  font-family: 'Mrs Saint Delafield', cursive;
-  font-weight: 400;
-}
-
 .logo a {
   text-decoration: none;
   color: $clr-light;
   font-family: 'Mrs Saint Delafield', cursive;
   font-weight: 400;
+}
+
+/* menu toogle */
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url("../public/icons/menu.png");
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position: center;
+  cursor: pointer;
+  filter: invert(1);
+  transition: 0.8s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 50%;
+}
+
+.toggle:hover, .toggle.active:hover {
+transform: scale(1.1);
+background-color: $clr-main;
+filter: invert(0);
+}
+
+.toggle.active {
+  background: url("../public/icons/close.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* more button */
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: $clr-dark;
+  background-color: $clr-light;
+  padding: 0.5em 1.25em;
+  border-radius: 0.25rem;
+}
+
+.button:hover {
+  background-color: $clr-main;
+  color: $clr-light;
+}
+
+// responsive
+@media (min-width: 440px) {
+  .navbarMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .navbar {
+    display: none;
+  }
+  .navbarMobile {
+    z-index: 100;
+    filter: invert(1);
+    display: flex;
+    align-items: center;
+  }
+  .showcase header {
+    background-color: black;
+    position: fixed;
+  }
 }

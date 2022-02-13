@@ -82,6 +82,24 @@ h6 {
   transition: 0.7s;
 }
 
+.showcase.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  display: flex;
+  width: 80vw;
+}
+
+.divider-section {
+  margin-right: 1em;
+  font-size: 3rem;
+  color: $clr-main;
+}
+
 /* ==============
     buttons
 =================*/
@@ -128,56 +146,6 @@ h6 {
   top: -100%;
   transition: 1.5s;
 }
-
-
-
-/* menu toogle */
-.toggle {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    // background: url("../../icons/menu.png");
-    background-repeat: no-repeat;
-    background-size: 26px;
-    background-position: center;
-    cursor: pointer;
-    filter: invert(1);
-    transition: 0.8s;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    border-radius: 50%;
-}
-
-.toggle:hover, .toggle.active:hover {
-  transform: scale(1.1);
-  background-color: $clr-main;
-  filter: invert(0);
-}
-
-.toggle.active {
-    // background: url("../../icons/close.png");
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
-    cursor: pointer;
-}
-
-/* more button */
-.button {
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    color: var(--clr-dark);
-    background-color: var(--clr-light);
-    padding: 0.5em 1.25em;
-    border-radius: 0.25rem;
-}
-
-.button:hover {
-    background-color: var(--clr-main);
-    color: var(--clr-light);
-}
-
-
 
 /* scroll to top button */
 .upBtn {

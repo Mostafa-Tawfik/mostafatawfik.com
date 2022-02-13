@@ -1,5 +1,4 @@
 import React from 'react';
-import MediaQuery from 'react-responsive'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import styles from '../components/header.module.scss'
@@ -24,20 +23,14 @@ export default function Header(props) {
       if (location.pathname === '/') {
         return { 
           prev,
-          nextPage: '/services',
-          prevPage: '/portfolio'
-        }
-      } else if (location.pathname === '/services') {
-        return { 
-          prev,
           nextPage: '/about',
-          prevPage: '/'
+          prevPage: '/portfolio'
         }
       } else if (location.pathname === '/about') {
         return { 
           prev,
           nextPage: '/portfolio',
-          prevPage: '/services'
+          prevPage: '/'
         }
       } else if (location.pathname === '/portfolio') {
         return { 
@@ -74,10 +67,7 @@ export default function Header(props) {
   return <header className={styles.header}>
 
       <h4 className={isLogo ? `${styles.logo}` : location.pathname !== '/' ? `${styles.logo} ${styles.homePage}` : `${styles.logo}`} 
-      onClick={(e)=> {
-        toggleLogo()
-        delayAndGo(e, '/')
-      }}>
+      onClick={toggleLogo}>
     
       <Link
           href='/'
@@ -87,22 +77,15 @@ export default function Header(props) {
         </Link> 
       </h4>
 
-      {/* <MediaQuery minWidth={440}> */}
-      
         <div className={styles.navbar}>
           <ul>
             <Link href='/' >Home</Link>
-            <Link href='/services'>Services</Link>
             <Link href='/about'>About</Link>
             <Link href='/portfolio'>Portfolio</Link>
           </ul>
         </div>
 
-      {/* </MediaQuery> */}
-
-      {/* <MediaQuery maxWidth={440}>
-      
-        <div className='header-holder'>
+        <div className={styles.navbarMobile}>
 
           <Link href={`${switchPage.prevPage}`}>          
             <img src='../../images/previous.png' className={styles.before} width="35px" alt="previous page button"></img>
@@ -115,7 +98,6 @@ export default function Header(props) {
           </Link>         
 
         </div>
-      </MediaQuery> */}
 
     </header>;
 }
