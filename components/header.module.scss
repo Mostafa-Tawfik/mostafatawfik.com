@@ -1,0 +1,66 @@
+@import '../styles/variables.scss';
+/* =========
+    navbar
+============*/
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 6em;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  ul {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+
+    & a {
+      list-style: none;
+      color: $clr-light;
+      text-decoration-line: none;
+      transition: 0.5s;
+      text-transform: uppercase;
+
+      &:hover {
+        transform: scale(1.02);
+        color: $clr-main;
+      }
+    }
+  }
+}
+
+// header
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo.homePage {
+  transform: scale(1.5);
+  transition: 5s;
+}
+
+.myname {
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-weight: 400;
+}
+
+.logo a {
+  text-decoration: none;
+  color: $clr-light;
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-weight: 400;
+}
