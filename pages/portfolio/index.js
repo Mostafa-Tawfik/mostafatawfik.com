@@ -28,7 +28,7 @@ export default function portfolio() {
               <Link href={'/portfolio/' + project.path} key={project.id}>
                 <div className={styles['card-holder']} key={project.id}>
                   <div className={styles['card-preview']}>
-                    <img src='../../images/mac-mockup.png' alt='preview' className='card-laptop'></img>
+                    <img src='../../images/mac-mockup.png' alt='preview' className={styles['card-laptop']}></img>
                     <div className={styles["card-image"]} style={{backgroundImage:`url(${project.image})`}}></div>
                     <div className={styles['card-preview-mobile']}>
                       <img src='../../images/iphone.png' alt='preview' className={styles['card-mobile']}></img>

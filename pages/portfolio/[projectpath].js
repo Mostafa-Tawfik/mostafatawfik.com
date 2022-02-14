@@ -17,9 +17,6 @@ export default function Project(props) {
 
   const [showProject, setShowProject] = React.useState([''])
 
-  console.log(showProject)
-  console.log(params)
-
   React.useEffect(()=>{
     AppData.Projects.map(pro =>
       pro.path === params.query.projectpath?
@@ -33,8 +30,6 @@ export default function Project(props) {
       )
     })
 
-    console.log(showProject.builtWith)
-
   return (
     <div>
       <motion.div
@@ -44,7 +39,6 @@ export default function Project(props) {
           variants={pageMotion}
         >
       <section className={styles['project']}>
-      <img className={styles['project-hero2']} src='../../images/raw3.png' alt='hero'></img>
 
         <section className={styles['project-title']}>
           <h1>{showProject.title}</h1>

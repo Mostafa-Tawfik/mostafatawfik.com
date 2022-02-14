@@ -101,4 +101,44 @@
   filter: saturate(1.33);
 }
 
+/* ==============
+    responsive
+=================*/
 
+@media (max-width: 800px) {
+  .card-section {
+    margin: 0;
+    .card-holder {
+      width: 610px;
+      gap: 1.5em;
+      .card-preview {
+        width: 250px;
+        .card-laptop {
+          width: 250px;
+        }
+      }
+      .card-content *{
+          width: 220px;
+      }
+      .card-title {
+        font-size: 1.1rem;
+      }
+      .card-preview-mobile {
+        width: 50px;
+        .card-mobile {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .card-holder {
+    flex-direction: column-reverse;
+    height: 450px;
+  }
+  .card-section .card-holder {
+    width: 330px;
+  }
+}

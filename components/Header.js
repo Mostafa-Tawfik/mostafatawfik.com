@@ -7,9 +7,6 @@ export default function Header(props) {
   // import useLocation 
   const location = useRouter()
 
-  // import useNavigate
-  // const navigate = useNavigate()
-  
   // a state to decide next and prev page path
   const [switchPage, setswitchPage] = React.useState({
     currentPage: location.pathname,
@@ -50,18 +47,18 @@ export default function Header(props) {
 
   // Mostafa Tawfik effect
   const [isLogo, setIsLogo] = React.useState(true)
+  console.log(isLogo)
 
   function toggleLogo() {
     setIsLogo(prev => !prev)
   }
 
-
   // go to path after delay
   function delayAndGo(e, to) {
     e.preventDefault()
 
-    setTimeout(() => location.push(to), 1300)
-
+    setTimeout(() => location.push(to).then(setIsLogo(prev => !prev)), 1300)
+    
   }
 
   return <header className={styles.header}>
@@ -75,17 +72,17 @@ export default function Header(props) {
       } 
       onClick={toggleLogo}>
     
-      <Link
-          href='/'
-          className={
+      <Link href='/'>          
+          <a className={
             isLogo ? 
-            `${styles.myname}` : 
+            `${styles['myname']}` : 
             location.pathname !== '/' ? 
-            `${styles.myname} ${styles.homePage}` : 
-            `${styles.myname}`
+            `${styles['myname']} ${styles['homePage']}` : 
+            `${styles['myname']}`
           }
-          onClick={(e)=> delayAndGo(e, '/')}>          
+          onClick={(e)=> delayAndGo(e, '/')}>
           Mostafa Tawfik
+          </a>
         </Link> 
       </h4>
 
@@ -103,7 +100,13 @@ export default function Header(props) {
             <img src='../../images/previous.png' className={styles.before} width="35px" alt="previous page button"></img>
           </Link> 
 
-          <button className={props.isActive.menuActive ? `${styles.toggle} ${styles.active}` : `${styles.toggle}`} onClick={props.toggle}></button>
+          <button 
+            className={
+              props.isActive.menuActive ? 
+              `${styles.toggle} ${styles.active}` : 
+              `${styles.toggle}`} 
+              onClick={props.toggle}
+              ></button>
 
           <Link href={`${switchPage.nextPage}`}>          
             <img src='../../images/next.png' className={styles.next} width="35px" alt="next page button"></img>

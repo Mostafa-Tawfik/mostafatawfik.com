@@ -171,3 +171,16 @@ h6 {
     right: 205px;
   }
 }
+
+@media (max-width: 440px) {
+  .showcase {
+    flex-direction: column;
+  }
+  .showcase,
+  .header {
+    padding: 20px;
+  }
+  .divider {
+    display: none;
+  }
+}

@@ -7,8 +7,7 @@ import { AnimatePresence } from "framer-motion"
 import Header from '../components/Header'
 import SocialLinks from '../components/SocialLinks'
 import Footer from '../components/Footer'
-// import Image from 'next/image'
-// import bg from '../public/images/raw3.png'
+import Menu from '../components/Menu'
 
 function MyApp({ Component, pageProps }) {
   const [isActive, setIsActive] = React.useState({
@@ -44,7 +43,7 @@ function MyApp({ Component, pageProps }) {
 
       <section className='app'>
 
-        <Header toggleMenu={toggleMenu} isActive={isActive}/>
+        <Header toggle={toggleMenu} isActive={isActive}/>
 
         <AnimatePresence exitBeforeEnter>
 
@@ -58,6 +57,7 @@ function MyApp({ Component, pageProps }) {
           </section>
         </AnimatePresence>
         <SocialLinks isActive={isActive}/>
+        <Menu toggle={toggleMenu}/>
       </section>
 
     </Fragment>

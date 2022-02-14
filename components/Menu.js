@@ -1,36 +1,28 @@
 import React from 'react';
+import styles from '../styles/components/Menu.module.scss'
+import Link from 'next/link';
 
 export default function Menu(props) {
   return <div>
-    <div className='menu'>
-      <ul>
+    <div className={styles['menu']}>
+      <ul >
         <li>
-        <Link
-          to={'/'}
-          className="menuLi"
-          onClick={props.toggle}
-          >Home</Link>
+        <Link href={'/'}>     
+          <a className={styles["menuLi"]} onClick={props.toggle}>
+            Home
+          </a></Link>
         </li>
         <li>
-          <Link
-          to={'/services'}
-          className="menuLi"
-          onClick={props.toggle}
-          >Services</Link>
+        <Link href={'/about'}>     
+          <a className={styles["menuLi"]} onClick={props.toggle}>
+            About Me
+          </a></Link>
         </li>
         <li>
-          <Link
-          to={'/about'}
-          className="menuLi"
-          onClick={props.toggle}
-          >About Me</Link>
-        </li>
-        <li>
-        <Link
-          to={'/portfolio'}
-          className="menuLi"
-          onClick={props.toggle}
-          >Portfolio</Link>
+        <Link href={'/portfolio'}>     
+          <a className={styles["menuLi"]} onClick={props.toggle}>
+            Portfolio
+          </a></Link>
         </li>
       </ul>
     </div>

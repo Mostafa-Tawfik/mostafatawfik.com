@@ -250,7 +250,7 @@
   .about-header-desc {
     width: 80vw;
     z-index: 10;
-    margin-top: 5em;
+    margin-top: 7em;
   }
   .stackSet *{
     height: 70px;
@@ -313,30 +313,28 @@
 
 @media (max-width: 440px) {
 
-  .card-holder {
-    flex-direction: column-reverse;
-    height: 450px;
-  }
-  .card-section .card-holder {
-    width: 330px;
-  }
-  .about .about-header .about-header-desc {
-    width: 300px;
-    h1 {
-      font-size: 2rem;
+  .about-layout {
+    .about-header {
+      .about-header-desc {
+        width: 300px;
+        z-index: 10;
+        
+        & h1 {
+          font-size: 2rem;
+          margin-bottom: 1em;
+        }
+      }
     }
   }
-  .divider {
-    display: none;
-  }
+
   .education .education-title h1{
     font-size: 3rem;
   }
-  .navbar {
-    display: none;
-  }
   .services{
     margin: 1em 0em;
+    .services-cards-holder {
+      flex-direction: column;
+    }
   }
   .services-title,.stack-title{
     font-size: 1.5rem;
@@ -344,13 +342,10 @@
   .Services-desc{
     font-size: 0.9rem;
   }
-  .showcase,
-  .showcase header {
-    padding: 20px;
-  }
   .card {
     transform: scale(0.8);
   }
+  
   h2.head-title {
     font-size: 1.2em;
   }
@@ -367,61 +362,4 @@
 }
 
 @media (max-height: 550px) {
-  .showcase {
-    padding: 1em 40px;
-    position: relative;
-  }
-  .showcase header {
-    padding: 1em 0;
-    position: relative;
-  }
-  .card-holder {
-    margin-top: 2em;
-  }
-  .card {
-    transform: scale(0.9);
-  }
-  .logo {
-    font-size: 1em;
-  }
-  .text h2 {
-    font-size: 3em;
-  }
-  .text h3 {
-    font-size: 2em;
-  }
-  .text h4 {
-    font-size: 1.6em;
-  }
-  .text h5 {
-    font-size: 1.3em;
-  }
-  .text h6 {
-    font-size: 1.1em;
-  }
-  .showcase.active {
-    transform: translateX(-205px);
-  }
-  .menu {
-    width: 205px;
-  }
-  .social.vertical {
-    position: relative;
-    top: 0%;
-    bottom: 0px;
-    z-index: 10;
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-    align-items: center;
-  }
-  .mypicdiv {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    padding: 5em 0 2em 0;
-  }
-  h2.head-title {
-    font-size: 1.1em;
-  }
 }
