@@ -18,7 +18,7 @@ export default function Home() {
           exit='exit'
           variants={pageMotion}
         >
-          <div className={styles.homeSection}>
+          <div className={styles['home-section']}>
             <img className={styles.myLogo} alt='myLogo' src='../../images/logo.jpg'></img>
             <div className={styles.text}>
               <h2>Front-End Developer</h2>

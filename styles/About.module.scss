@@ -15,6 +15,7 @@
       
       & h1 {
         font-size: 4rem;
+        font-family: $sf;
       }
       p {
         font-family: 'Josefin Sans', sans-serif;
@@ -55,7 +56,7 @@
   .stack-title {
     font-size: 4rem;
     z-index: 10;
-    color: $clr-sec;
+    font-family: $sf;
   }
   .stackSet-holder{
     display: flex;
@@ -97,9 +98,9 @@
   }
 
   .education-title {
-    font-size: 4rem;
-    z-index: 10;
-    color: $clr-sec;
+    h1 {
+      font-family: $sf;
+    }
   }
 
   .education-card {
@@ -160,8 +161,6 @@
   }
 }
 
-
-
 /* old about */
 .social.vertical {
   position: fixed;
@@ -184,6 +183,7 @@
   transform: scale(0.8) translateX(-15px);
 }
 
+// services
 .services {
   display: flex;
   flex-direction: column;
@@ -196,7 +196,7 @@
   font-size: 3rem;
   z-index: 10;
   margin: 3em 0 1em;
-  font-family: 'Redressed', cursive;
+  font-family: $sf;
 }
 
 .Services-desc {
@@ -240,4 +240,204 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 3em;
+}
+
+/* ==============
+    responsive
+=================*/
+
+@media (max-width: 800px) {
+
+  .about {
+    .about-header-desc {
+      width: 80vw;
+      z-index: 10;
+      margin-top: 5em;
+    }
+    .stackSet *{
+      height: 70px;
+      font-size: 15px;
+    }
+    .about-header-desc h1 {
+      font-size: 2rem;
+    }
+    .about-stack{
+      margin: 6em 0;
+
+    }
+    .stack-title {
+      font-size: 2rem;
+    }
+
+    .stack-holder {
+      display: block;
+    }
+  }
+
+  .services-title{
+    margin-top: 3em;
+    font-size: 2rem;
+  }
+  .Services-desc {
+    font-size: 1rem;
+  }
+  .lottie-holder{
+    margin-top: 0;
+  }
+  .services-card-title{
+    font-size: 1.3rem;
+  }
+  .services-card{
+    width: 300px;
+    height: min-content;
+  }
+  .services-card-desc{
+    font-size: 1rem;
+  }
+  .services-cards-holder{
+    flex-direction: column;
+  }
+
+  .showcase.active {
+    right: 205px;
+  }
+  .menu {
+    width: 205px;
+  }
+  h2.head-title {
+    font-size: 1.1em;
+  }
+
+  .education {
+    .education-card {
+      width: 290px;
+      height: 400px;
+    }
+    .education-card-title {
+      font-size: 1.1rem;
+    }
+    .education-card-title-desc {
+      font-size: 0.9rem;
+    }
+    .education-card-dates {
+      font-size: 1rem;
+    }
+  }
+
+
+}
+
+@media (max-width: 440px) {
+
+  .card-holder {
+    flex-direction: column-reverse;
+    height: 450px;
+  }
+  .card-section .card-holder {
+    width: 330px;
+  }
+  .about .about-header .about-header-desc {
+    width: 300px;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .divider {
+    display: none;
+  }
+  .education .education-title h1{
+    font-size: 3rem;
+  }
+  .navbar {
+    display: none;
+  }
+  .services{
+    margin: 1em 0em;
+  }
+  .services-title,.stack-title{
+    font-size: 1.5rem;
+  }
+  .Services-desc{
+    font-size: 0.9rem;
+  }
+  .showcase,
+  .showcase header {
+    padding: 20px;
+  }
+  .card {
+    transform: scale(0.8);
+  }
+  h2.head-title {
+    font-size: 1.2em;
+  }
+  .social img {
+    width: 30px;
+  }
+  .education-card {
+    width: 300px;
+  }
+  .education-card-title {
+    font-size: 1rem;
+    height: 60px;
+  }
+}
+
+@media (max-height: 550px) {
+  .showcase {
+    padding: 1em 40px;
+    position: relative;
+  }
+  .showcase header {
+    padding: 1em 0;
+    position: relative;
+  }
+  .card-holder {
+    margin-top: 2em;
+  }
+  .card {
+    transform: scale(0.9);
+  }
+  .logo {
+    font-size: 1em;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
+  .text h4 {
+    font-size: 1.6em;
+  }
+  .text h5 {
+    font-size: 1.3em;
+  }
+  .text h6 {
+    font-size: 1.1em;
+  }
+  .showcase.active {
+    transform: translateX(-205px);
+  }
+  .menu {
+    width: 205px;
+  }
+  .social.vertical {
+    position: relative;
+    top: 0%;
+    bottom: 0px;
+    z-index: 10;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mypicdiv {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 5em 0 2em 0;
+  }
+  h2.head-title {
+    font-size: 1.1em;
+  }
 }

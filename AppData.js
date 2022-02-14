@@ -98,7 +98,7 @@ export default {
       id: 1,
       name: 'DESIGN',
       icon: 'majesticons:ux-circle',
-      desc: 'Create a seamless and energizing user experience and user interface that gains trust, loyalty, fervent fandom, and sales to establish a solid foundation for future development and long-term growth.'
+      desc: 'Create a seamless and energizing user experience and user interface to establish a solid foundation for future development and long-term growth.'
     },
     {
       id: 2,
@@ -110,7 +110,7 @@ export default {
       id: 3,
       name: 'SEO',
       icon: 'whh:seo',
-      desc: 'Expand your target audiences, improve your brand awareness and boost Your credibility. A website with high seo rank is typically considered high-quality and trustworthy by search engines.'
+      desc: 'Expand your target audiences, improve your brand awareness and boost Your credibility.'
     },
   ],
   Projects: [

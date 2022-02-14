@@ -1,0 +1,365 @@
+@import './variables.scss';
+/* ==============
+    responsive
+=================*/
+
+/* turn on animation on hovering devices */
+@media (max-width: 800px) {
+
+  .project{
+    .project-title {
+      height: 25vh;
+    }
+  }
+  .project h1 {
+    font-size: 2rem;
+  }
+  .project-btn {
+    color: $clr-dark;
+  }
+  .project-overview p {
+      font-size: 1rem;
+  }
+
+  .project-overview, .builtwith, .seemore {
+    width: 80%;
+  }
+  .builtwith-stack *{
+    width: 100px;
+  }
+
+  .card-section {
+    margin: 0;
+    .card-holder {
+      width: 610px;
+      gap: 1.5em;
+      .card-preview {
+        width: 250px;
+        .card-laptop {
+          width: 250px;
+        }
+      }
+      .card-content *{
+          width: 220px;
+      }
+      .card-title {
+        font-size: 1.1rem;
+      }
+      .card-preview-mobile {
+        width: 50px;
+        .card-mobile {
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .about {
+    .about-header-desc {
+      width: 80vw;
+      z-index: 10;
+      margin-top: 5em;
+    }
+    .stackSet *{
+      height: 70px;
+      font-size: 15px;
+    }
+    .about-header-desc h1 {
+      font-size: 2rem;
+    }
+    .about-stack{
+      margin: 6em 0;
+
+    }
+    .stack-title {
+      font-size: 2rem;
+    }
+
+    .stack-holder {
+      display: block;
+    }
+  }
+
+  .myname {
+    font-size: 2rem;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+
+  .services-title{
+    margin-top: 3em;
+    font-size: 2rem;
+  }
+  .Services-desc {
+    font-size: 1rem;
+  }
+  .lottie-holder{
+    margin-top: 0;
+  }
+  .services-card-title{
+    font-size: 1.3rem;
+  }
+  .services-card{
+    width: 300px;
+    height: min-content;
+  }
+  .services-card-desc{
+    font-size: 1rem;
+  }
+  .services-cards-holder{
+    flex-direction: column;
+  }
+
+  .text h2 {
+    font-size: 2.4em;
+    margin-top: 1em;
+  }
+  .text h3 {
+    font-size: 1.8em;
+    margin-top: 1em;
+  }
+  .text h4 {
+    font-size: 1.6em;
+  }
+  .text h5 {
+    font-size: 1.3em;
+  }
+  .text h6 {
+    font-size: 1.1em;
+  }
+  .showcase.active {
+    right: 205px;
+  }
+  .menu {
+    width: 205px;
+  }
+  /* .social.vertical {
+    position: relative;
+    top: 0%;
+    bottom: 0px;
+    z-index: 10;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+  } */
+  .mypicdiv {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 5em 0 2em 0;
+  }
+  h2.head-title {
+    font-size: 1.1em;
+  }
+
+  .education {
+    .education-card {
+      width: 290px;
+      height: 400px;
+    }
+    .education-card-title {
+      font-size: 1.1rem;
+    }
+    .education-card-title-desc {
+      font-size: 0.9rem;
+    }
+    .education-card-dates {
+      font-size: 1rem;
+    }
+  }
+
+
+}
+
+@media (max-width: 440px) {
+
+  .project{
+    .project-title {
+      margin-top: 3em;
+      height: 30vh;
+      width: 90%;
+      & > p {
+        width: 100%;
+      }
+    }
+  }
+  .project-preview {
+    width: 90%;
+  }
+  .showcase header {
+    background-color: black;
+    position: fixed;
+  }
+  .main {
+    gap: 5em;
+    display: block;
+  }
+  .homeSection{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3em;
+    gap: 0;
+  }
+  .myLogo {
+    width: 250px;
+    height: 250px;
+    margin-top: 3em;
+  }
+  .footer {
+    position: relative;
+    span , p {
+      font-size: 1rem;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .card-holder {
+    flex-direction: column-reverse;
+    height: 450px;
+  }
+  .card-section .card-holder {
+    width: 330px;
+  }
+  .about .about-header .about-header-desc {
+    width: 300px;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .divider {
+    display: none;
+  }
+  .education .education-title h1{
+    font-size: 3rem;
+  }
+  .navbar {
+    display: none;
+  }
+  .services{
+    margin: 1em 0em;
+  }
+  .services-title,.stack-title{
+    font-size: 1.5rem;
+  }
+  .Services-desc{
+    font-size: 0.9rem;
+  }
+  .showcase,
+  .showcase header {
+    padding: 20px;
+  }
+  .card {
+    transform: scale(0.8);
+  }
+  .text a {
+    padding: 5px 15px;
+    letter-spacing: 1px;
+  }
+  .text h2 {
+    font-size: 2.5em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
+  .text h4 {
+    font-size: 1.6em;
+  }
+  .text h5 {
+    font-size: 1.3em;
+  }
+  .text h6 {
+    font-size: 1.1em;
+  }
+  h2.head-title {
+    font-size: 1.2em;
+  }
+  .social img {
+    width: 30px;
+  }
+  .education-card {
+    width: 300px;
+  }
+  .education-card-title {
+    font-size: 1rem;
+    height: 60px;
+  }
+}
+
+@media (max-height: 550px) {
+  .showcase {
+    padding: 1em 40px;
+    position: relative;
+  }
+  .showcase header {
+    padding: 1em 0;
+    position: relative;
+  }
+  .card-holder {
+    margin-top: 2em;
+  }
+  .card {
+    transform: scale(0.9);
+  }
+  .logo {
+    font-size: 1em;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
+  .text h4 {
+    font-size: 1.6em;
+  }
+  .text h5 {
+    font-size: 1.3em;
+  }
+  .text h6 {
+    font-size: 1.1em;
+  }
+  .showcase.active {
+    transform: translateX(-205px);
+  }
+  .menu {
+    width: 205px;
+  }
+  .social.vertical {
+    position: relative;
+    top: 0%;
+    bottom: 0px;
+    z-index: 10;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mypicdiv {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 5em 0 2em 0;
+  }
+  h2.head-title {
+    font-size: 1.1em;
+  }
+}
+
+/* disable motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 00.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}

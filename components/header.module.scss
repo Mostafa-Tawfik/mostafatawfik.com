@@ -107,6 +107,9 @@ filter: invert(0);
 }
 
 // responsive
+@media (max-width: 800px) {
+}
+
 @media (min-width: 440px) {
   .navbarMobile {
     display: none;
@@ -126,5 +129,12 @@ filter: invert(0);
   .showcase header {
     background-color: black;
     position: fixed;
+  }
+  .myname {
+    font-size: 2rem;
+  }
+
+  .logo {
+    font-size: 1em;
   }
 }
