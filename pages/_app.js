@@ -5,6 +5,8 @@ import { Fragment } from 'react'
 import { useRouter } from 'next/router'
 import { AnimatePresence } from "framer-motion"
 import Header from '../components/Header'
+import SocialLinks from '../components/SocialLinks'
+import Footer from '../components/Footer'
 // import Image from 'next/image'
 // import bg from '../public/images/raw3.png'
 
@@ -52,8 +54,10 @@ function MyApp({ Component, pageProps }) {
             <img className="bg" src='../../images/raw3.png' alt="keyboard background"></img>
             <Component {...pageProps} />
 
+          <Footer />
           </section>
         </AnimatePresence>
+        <SocialLinks isActive={isActive}/>
       </section>
 
     </Fragment>

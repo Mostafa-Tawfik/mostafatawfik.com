@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import styles from '../components/header.module.scss'
+import styles from '../styles/components/header.module.scss'
 
 export default function Header(props) {
   // import useLocation 
@@ -66,12 +66,24 @@ export default function Header(props) {
 
   return <header className={styles.header}>
 
-      <h4 className={isLogo ? `${styles.logo}` : location.pathname !== '/' ? `${styles.logo} ${styles.homePage}` : `${styles.logo}`} 
+      <h4 className={
+        isLogo ? 
+        `${styles.logo}` : 
+        location.pathname !== '/' ? 
+        `${styles.logo} ${styles.homePage}` : 
+        `${styles.logo}`
+      } 
       onClick={toggleLogo}>
     
       <Link
           href='/'
-          className={isLogo ? `${styles.myname}` : location.pathname !== '/' ? `${styles.myname} ${styles.homePage}` : `${styles.myname}`}
+          className={
+            isLogo ? 
+            `${styles.myname}` : 
+            location.pathname !== '/' ? 
+            `${styles.myname} ${styles.homePage}` : 
+            `${styles.myname}`
+          }
           onClick={(e)=> delayAndGo(e, '/')}>          
           Mostafa Tawfik
         </Link> 

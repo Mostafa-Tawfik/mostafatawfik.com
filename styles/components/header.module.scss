@@ -1,4 +1,4 @@
-@import '../styles/variables.scss';
+@import '../variables.scss';
 /* =========
     navbar
 ============*/
@@ -65,7 +65,7 @@
   position: relative;
   width: 50px;
   height: 50px;
-  background: url("../public/icons/menu.png");
+  background: url("../../public/icons/menu.png");
   background-repeat: no-repeat;
   background-size: 26px;
   background-position: center;
@@ -83,7 +83,7 @@ filter: invert(0);
 }
 
 .toggle.active {
-  background: url("../public/icons/close.png");
+  background: url("../../public/icons/close.png");
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;

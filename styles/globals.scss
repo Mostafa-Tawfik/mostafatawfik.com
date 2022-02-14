@@ -24,7 +24,7 @@ a {
 
 // fonts
 P {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $pf;
 }
 h1 {
   font-size: 4.5rem;
@@ -161,35 +161,6 @@ h6 {
   right: 20px;
 }
 
-/* ========================
-    social media links
-===========================*/
-
-.social {
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  margin-top: 1em;
-}
-
-.social li {
-  list-style: none;
-}
-
-.social li a {
-  display: inline-block;
-  margin-right: 20px;
-  transform: scale(0.8);
-  transition: 0.7s;
-}
-
-.social li a:hover {
-  transform: scale(0.8) translateY(-15px);
-}
-
-.social img {
-  width: 35px;
-}
 
 /* ==============
     responsive

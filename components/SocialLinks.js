@@ -1,8 +1,13 @@
 import React from 'react';
+import styles from '../styles/components/Social.module.scss'
 
 export default function SocialLinks(props) {
   return <div>
-    <ul className={`social vertical ${props.isActive.menuActive ? 'active' : ''}`}>
+    <ul className={
+      props.isActive.menuActive ? 
+      `${styles['social']} ${styles['vertical']} ${styles['active']}` : 
+      `${styles['social']} ${styles['vertical']}`
+      }>
       <li><a 
           href="https://twitter.com/Mostafa__Tawfik" 
           target="_blank "
