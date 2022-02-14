@@ -54,84 +54,9 @@
     }
   }
 
-  .about {
-    .about-header-desc {
-      width: 80vw;
-      z-index: 10;
-      margin-top: 5em;
-    }
-    .stackSet *{
-      height: 70px;
-      font-size: 15px;
-    }
-    .about-header-desc h1 {
-      font-size: 2rem;
-    }
-    .about-stack{
-      margin: 6em 0;
-
-    }
-    .stack-title {
-      font-size: 2rem;
-    }
-
-    .stack-holder {
-      display: block;
-    }
-  }
-
-  .myname {
-    font-size: 2rem;
-  }
-
-  .logo {
-    font-size: 1em;
-  }
-
-  .services-title{
-    margin-top: 3em;
-    font-size: 2rem;
-  }
-  .Services-desc {
-    font-size: 1rem;
-  }
-  .lottie-holder{
-    margin-top: 0;
-  }
-  .services-card-title{
-    font-size: 1.3rem;
-  }
-  .services-card{
-    width: 300px;
-    height: min-content;
-  }
-  .services-card-desc{
-    font-size: 1rem;
-  }
-  .services-cards-holder{
-    flex-direction: column;
-  }
-
-  .text h2 {
-    font-size: 2.4em;
-    margin-top: 1em;
-  }
-  .text h3 {
-    font-size: 1.8em;
-    margin-top: 1em;
-  }
-  .text h4 {
-    font-size: 1.6em;
-  }
-  .text h5 {
-    font-size: 1.3em;
-  }
-  .text h6 {
-    font-size: 1.1em;
-  }
-  .showcase.active {
-    right: 205px;
-  }
+  
+  
+  
   .menu {
     width: 205px;
   }
@@ -151,25 +76,7 @@
     justify-content: left;
     padding: 5em 0 2em 0;
   }
-  h2.head-title {
-    font-size: 1.1em;
-  }
-
-  .education {
-    .education-card {
-      width: 290px;
-      height: 400px;
-    }
-    .education-card-title {
-      font-size: 1.1rem;
-    }
-    .education-card-title-desc {
-      font-size: 0.9rem;
-    }
-    .education-card-dates {
-      font-size: 1rem;
-    }
-  }
+  
 
 
 }

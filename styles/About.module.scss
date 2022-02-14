@@ -247,33 +247,28 @@
 =================*/
 
 @media (max-width: 800px) {
-
-  .about {
-    .about-header-desc {
-      width: 80vw;
-      z-index: 10;
-      margin-top: 5em;
-    }
-    .stackSet *{
-      height: 70px;
-      font-size: 15px;
-    }
-    .about-header-desc h1 {
-      font-size: 2rem;
-    }
-    .about-stack{
-      margin: 6em 0;
-
-    }
+  .about-header-desc {
+    width: 80vw;
+    z-index: 10;
+    margin-top: 5em;
+  }
+  .stackSet *{
+    height: 70px;
+    font-size: 15px;
+  }
+  .about-header-desc h1 {
+    font-size: 2rem;
+  }
+  .about-stack{
+    margin: 6em 0;
     .stack-title {
       font-size: 2rem;
     }
-
     .stack-holder {
       display: block;
     }
   }
-
+  
   .services-title{
     margin-top: 3em;
     font-size: 2rem;
@@ -294,21 +289,11 @@
   .services-card-desc{
     font-size: 1rem;
   }
-  .services-cards-holder{
-    flex-direction: column;
-  }
-
-  .showcase.active {
-    right: 205px;
-  }
-  .menu {
-    width: 205px;
-  }
-  h2.head-title {
+  h2.head-title { 
     font-size: 1.1em;
   }
 
-  .education {
+  .education {  
     .education-card {
       width: 290px;
       height: 400px;
@@ -323,7 +308,6 @@
       font-size: 1rem;
     }
   }
-
 
 }
 

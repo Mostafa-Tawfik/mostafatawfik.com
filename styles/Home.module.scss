@@ -102,6 +102,29 @@
 =================*/
 
 @media (max-width: 800px) {
+  .myname {
+    font-size: 2rem;
+  }
+  .logo {
+    font-size: 1em;
+  }
+  .text h2 {
+    font-size: 2.4em;
+    margin-top: 1em;
+  }
+  .text h3 {
+    font-size: 1.8em;
+    margin-top: 1em;
+  }
+  .text h4 {
+    font-size: 1.6em;
+  }
+  .text h5 {
+    font-size: 1.3em;
+  }
+  .text h6 {
+    font-size: 1.1em;
+  }
 }
 
 @media (max-width: 440px) {
