@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AppData from '../AppData';
-import styles from '../styles/Portfolio.module.scss'
-// import { Link } from 'next/link';
+import AppData from '../../AppData';
+import styles from '../../styles/Portfolio.module.scss'
+import Link from 'next/link'
 
 export default function portfolio() {
   const pageMotion= {
@@ -25,7 +25,7 @@ export default function portfolio() {
         <div className={styles["card-section"]}>
           {AppData.Projects.map(project => {
             return (
-              // <Link href={`/${project.path}`} key={project.id}>
+              <Link href={'/portfolio/' + project.path} key={project.id}>
                 <div className={styles['card-holder']} key={project.id}>
                   <div className={styles['card-preview']}>
                     <img src='../../images/mac-mockup.png' alt='preview' className='card-laptop'></img>
@@ -40,7 +40,7 @@ export default function portfolio() {
                     <p className={styles["card-desc"]}>{project.desc}</p>
                   </div>
                 </div>
-              // </Link>
+              </Link>
             )
           })}
         </div>

@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from '../styles/components/Social.module.scss'
+import { useRouter } from 'next/router';
 
 export default function SocialLinks(props) {
+  const router = useRouter()
   return <div>
     <ul className={
       props.isActive.menuActive ? 
@@ -13,7 +15,7 @@ export default function SocialLinks(props) {
           target="_blank "
           rel="noreferrer">
             <img 
-              src="images/twitter.png"
+              src= {router.pathname === '/portfolio/[projectpath]' ? '../images/twitter.png' : 'images/twitter.png'}
               alt="twitter logo">
             </img>
           </a>
@@ -23,7 +25,7 @@ export default function SocialLinks(props) {
           target="_blank"
           rel="noreferrer">
             <img 
-              src="images/dribbble.png"
+              src={router.pathname === '/portfolio/[projectpath]' ? '../images/dribbble.png' : './images/dribbble.png'}
               alt="dribbble logo">
             </img>
           </a>
@@ -32,7 +34,7 @@ export default function SocialLinks(props) {
             href="https://www.behance.net/Mostafa_Tawfik" target="_blank"
             rel="noreferrer">
               <img 
-                src="images/behance.png"
+                src={router.pathname === '/portfolio/[projectpath]' ? '../images/behance.png' : './images/behance.png'}
                 alt="behance logo">
               </img>
           </a>
@@ -42,7 +44,7 @@ export default function SocialLinks(props) {
             target="_blank"
             rel="noreferrer">
               <img 
-                src="images/github.png"
+                src={router.pathname === '/portfolio/[projectpath]' ? '../images/github.png' : './images/github.png'}
                 alt="github logo">
               </img>
           </a>
@@ -52,7 +54,7 @@ export default function SocialLinks(props) {
             target="_blank" 
             rel="noreferrer">
               <img 
-                src="images/linkedin.png"
+                src={router.pathname === '/portfolio/[projectpath]' ? '../images/linkedin.png' : './images/linkedin.png' }
                 alt="linkedin logo">
               </img>
           </a>
