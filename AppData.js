@@ -23,7 +23,11 @@ export default {
       url: "vscode-icons:file-type-reactjs",
     },
     {
-      name: "Node",
+      name: "Next.js",
+      url: "file-icons:nextjs",
+    },
+    {
+      name: "Node.js",
       url: "logos:nodejs-icon",
     },
     {
@@ -122,7 +126,7 @@ export default {
       url: 'https://my-reads-beta.vercel.app/',
       git: 'https://github.com/Mostafa-Tawfik/My-Reads',
       image: '../../images/myReads.webp',
-      imageMobile: '../../images/myReadsM.png',
+      imageMobile: '../../images/myReadsM.webp',
       builtWith: ['HTML 5','CSS3', 'JavaScript', "React"],
     },
     {
@@ -133,9 +137,9 @@ export default {
       built and designed from scratch.`,
       url: 'https://www.mostafatawfik.com/',
       git: 'https://github.com/Mostafa-Tawfik/mostafatawfik.com',
-      image: '../../images/mtL.png',
+      image: '../../images/mtL.webp',
       imageMobile: '../../images/mtP.png',
-      builtWith: ['HTML 5','SASS', 'JavaScript', "React"],
+      builtWith: ['HTML 5','SASS', 'JavaScript', "React", 'Next.js'],
     },
     {
       id: 3,
@@ -145,8 +149,8 @@ export default {
       the navigational menu based on sections amount.`,
       url: 'https://landingpage-chi-six.vercel.app/',
       git: 'https://github.com/Mostafa-Tawfik/Landingpage',
-      image: '../../images/dynamicLandingPageL.png',
-      imageMobile: '../../images/dynamicLandingPageP.png',
+      image: '../../images/dynamicLandingPageL.webp',
+      imageMobile: '../../images/dynamicLandingPageP.webp',
       builtWith: ['HTML 5','CSS3', 'JavaScript',],
     },
     {
@@ -156,9 +160,9 @@ export default {
       desc: `An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.`,
       url: 'https://mt-weather-journal-app.herokuapp.com/',
       git: 'https://github.com/Mostafa-Tawfik/Weather-Journal-App',
-      image: '../../images/weatherAppL.png',
-      imageMobile: '../../images/weatherAppP.png',
-      builtWith: ['HTML 5','CSS3', 'JavaScript', "Node"],
+      image: '../../images/weatherAppL.webp',
+      imageMobile: '../../images/weatherAppP.webp',
+      builtWith: ['HTML 5','CSS3', 'JavaScript', "Node.js"],
     },
     {
       id: 5,
@@ -168,8 +172,8 @@ export default {
       HTML and CSS.`,
       url: 'https://50-fivers-games.vercel.app/',
       git: 'https://github.com/Mostafa-Tawfik/my-games',
-      image: '../../images/myGamesL.png',
-      imageMobile: '../../images/myGamesP.png',
+      image: '../../images/myGamesL.webp',
+      imageMobile: '../../images/myGamesP.webp',
       builtWith: ['HTML 5','SASS', 'JavaScript', 'SASS'],
     },
   ]

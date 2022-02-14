@@ -47,7 +47,6 @@ export default function Header(props) {
 
   // Mostafa Tawfik effect
   const [isLogo, setIsLogo] = React.useState(true)
-  console.log(isLogo)
 
   function toggleLogo() {
     setIsLogo(prev => !prev)
