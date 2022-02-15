@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import AppData from '../../AppData';
 import styles from '../../styles/Portfolio.module.scss'
 import Link from 'next/link'
+import Head from 'next/head';
 
 export default function portfolio() {
   const pageMotion= {
@@ -12,6 +13,12 @@ export default function portfolio() {
   }
 
   return <div>
+
+    <Head>
+      <title>Portfolio</title>
+      <meta name="description" content="Descover my projects, watch live demos, projects overview and links to github repos." />
+    </Head>
+
     <motion.div
           initial='initial'
           animate='animate'
@@ -19,7 +26,7 @@ export default function portfolio() {
           variants={pageMotion}
         >
         <div className='divider'>
-          <h2 className='divider-section'>PORTFOLIO</h2>
+          <h1 className='divider-section'>PORTFOLIO</h1>
           <hr></hr>
         </div>
         <div className={styles["card-section"]}>

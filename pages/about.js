@@ -6,6 +6,7 @@ import styles from '../styles/About.module.scss'
 import Education from '../components/Education';
 import MyStack from '../components/MyStack';
 import Services from '../components/Services';
+import Head from 'next/head';
 
 
 export default function about() {
@@ -15,6 +16,11 @@ export default function about() {
     exit: { opacity: 0, x: 0, transition: { duration: 2 } }
   }
   return <div>
+    <Head>
+      <title>About Me</title>
+      <meta name="description" content="More details about me, what i can do, my expertises, education, etc ..." />
+    </Head>
+
     <motion.div
           initial='initial'
           animate='animate'
@@ -22,7 +28,7 @@ export default function about() {
           variants={pageMotion}
         >
       <div className='divider'>
-        <h2 className='divider-section'>About Me</h2>
+        <h1 className='divider-section'>About Me</h1>
         <hr></hr>
       </div>
       

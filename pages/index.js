@@ -1,6 +1,8 @@
 import styles from '../styles/Home.module.scss'
 import { motion } from 'framer-motion';
 import Link from 'next/link'
+import { Fragment } from 'react';
+import Head from 'next/head';
 
 export default function Home() {
   const pageMotion= {
@@ -10,6 +12,13 @@ export default function Home() {
   }
 
   return (
+    <Fragment >
+      
+      <Head>
+        <title>Mostafa Tawfik</title>
+        <meta name="description" content="I'm Mostafa Tawfik a Front-End web developer and UI/UX designer with experience in building and designing static and dynamic responsive websites." />
+      </Head>
+
       <section className={styles.main}>
       
         <motion.div
@@ -36,5 +45,6 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
+    </Fragment>
   )
 }
