@@ -1,0 +1,101 @@
+@import './variables.scss';
+/* ==============
+    responsive
+=================*/
+
+/* turn on animation on hovering devices */
+@media (max-width: 800px) {
+
+   .menu {
+    width: 205px;
+  }
+  /* .social.vertical {
+    position: relative;
+    top: 0%;
+    bottom: 0px;
+    z-index: 10;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+  } */
+  .mypicdiv {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 5em 0 2em 0;
+  }
+  }
+
+@media (max-height: 550px) {
+  .showcase {
+    padding: 1em 40px;
+    position: relative;
+  }
+  .showcase header {
+    padding: 1em 0;
+    position: relative;
+  }
+  .card-holder {
+    margin-top: 2em;
+  }
+  .card {
+    transform: scale(0.9);
+  }
+  .logo {
+    font-size: 1em;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
+  .text h4 {
+    font-size: 1.6em;
+  }
+  .text h5 {
+    font-size: 1.3em;
+  }
+  .text h6 {
+    font-size: 1.1em;
+  }
+  .showcase.active {
+    transform: translateX(-205px);
+  }
+  .menu {
+    width: 205px;
+  }
+  .social.vertical {
+    position: relative;
+    top: 0%;
+    bottom: 0px;
+    z-index: 10;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mypicdiv {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 5em 0 2em 0;
+  }
+  h2.head-title {
+    font-size: 1.1em;
+  }
+}
+
+/* disable motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 00.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}

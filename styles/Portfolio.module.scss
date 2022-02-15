@@ -1,0 +1,144 @@
+@import './variables.scss';
+/* ====================
+    Portfolio Page
+=======================*/
+
+.head-title {
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: var(--clr-main);
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: min(100% - 1em);
+  padding-top: 4em;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 0 0;
+  a {
+    text-decoration-line: none;
+  }
+}
+
+.card-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  height: 400px;
+  width: 1100px;
+  transition: 0.3s;
+  background-color: rgb(14, 14, 14, 0.5);
+  border-radius: 10px;
+  color: $clr-light;
+  cursor: pointer;
+  
+  .card-preview {
+    width: 530px;
+    position: relative;
+    
+    .card-laptop {
+      z-index: 1;
+      width: 530px;
+    }
+    .card-image {
+      position: absolute;
+      height: 41%;
+      width: 68%;
+      color: $clr-light;
+      background-size: cover;
+      background-position: center;
+      z-index: 2;
+      top: 26%;
+      left: 16%;
+    }
+    .card-preview-mobile {
+      z-index: 20;
+      position: absolute;
+      width: 100px;
+      top: 45%;
+      left: 0%;
+      .card-mobile {
+        width: 100px;
+      }
+      .card-image-mobile {
+        position: absolute;
+        color: $clr-light;
+        background-size: cover;
+        background-position: center;
+        z-index: 30;
+        width: 90%;
+        height: 93%;
+        top: 2%;
+        left: 5%;
+        border-radius: 1rem;
+        
+      }
+    }
+  }
+   
+  .card-content {
+    .card-title {
+      font-size: 1.5rem;
+      height: 50px;
+    }
+    .card-desc {
+      width: 300px;
+    }
+  }
+}
+
+.card-holder:hover,
+.card:focus-within {
+  transform: scale(1.05);
+  filter: brightness(1.33);
+  filter: saturate(1.33);
+}
+
+/* ==============
+    responsive
+=================*/
+
+@media (max-width: 800px) {
+  .card-section {
+    margin: 0;
+    .card-holder {
+      width: 610px;
+      gap: 1.5em;
+      .card-preview {
+        width: 250px;
+        .card-laptop {
+          width: 250px;
+        }
+      }
+      .card-content *{
+          width: 220px;
+      }
+      .card-title {
+        font-size: 1.1rem;
+      }
+      .card-preview-mobile {
+        width: 50px;
+        .card-mobile {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .card-holder {
+    flex-direction: column-reverse;
+    height: 450px;
+  }
+  .card-section .card-holder {
+    width: 330px;
+  }
+}

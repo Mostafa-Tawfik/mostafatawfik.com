@@ -1,0 +1,141 @@
+@import '../variables.scss';
+/* =========
+    navbar
+============*/
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 6em;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  ul {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+
+    & a {
+      list-style: none;
+      color: $clr-light;
+      text-decoration-line: none;
+      transition: 0.5s;
+      text-transform: uppercase;
+
+      &:hover {
+        transform: scale(1.02);
+        color: $clr-main;
+      }
+    }
+  }
+}
+
+// header
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo.homePage {
+  transform: scale(1.5);
+  transition: 5s;
+}
+
+.logo a {
+  text-decoration: none;
+  color: $clr-light;
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-weight: 400;
+}
+
+/* menu toogle */
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url("../../public/icons/menu.png");
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.8s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 50%;
+}
+
+.toggle:hover, .toggle.active:hover {
+transform: scale(1.1);
+background-color: $clr-main;
+filter: invert(0);
+}
+
+.toggle.active {
+  background: url("../../public/icons/close.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* more button */
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: $clr-dark;
+  background-color: $clr-light;
+  padding: 0.5em 1.25em;
+  border-radius: 0.25rem;
+}
+
+.button:hover {
+  background-color: $clr-main;
+  color: $clr-light;
+}
+
+// responsive
+@media (max-width: 800px) {
+
+}
+
+@media (min-width: 440px) {
+  .navbarMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .navbar {
+    display: none;
+  }
+  .navbarMobile {
+    z-index: 100;
+    filter: invert(1);
+    display: flex;
+    align-items: center;
+  }
+  .header {
+    background-color: black;
+    position: fixed;
+    padding: 30PX;
+  }
+  .myname {
+    font-size: 2rem;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+}

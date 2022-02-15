@@ -1,0 +1,32 @@
+@import '../variables.scss' ;
+
+/* =========
+    menu
+============*/
+
+.menu {
+  position: fixed;
+  right: 0px;
+  top: 0%;
+  background: white;
+  width: 200px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 28px;
+  color: #111;
+}
+
+.menu a:hover {
+  color: $clr-main;
+}
