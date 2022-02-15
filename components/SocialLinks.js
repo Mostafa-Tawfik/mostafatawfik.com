@@ -1,9 +1,11 @@
-import React from 'react';
+import React from 'react'
 import styles from '../styles/components/Social.module.scss'
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
+import { Icon } from '@iconify/react'
 
 export default function SocialLinks(props) {
   const router = useRouter()
+
   return <div>
     <ul className={
       props.isActive.menuActive ? 
@@ -14,49 +16,34 @@ export default function SocialLinks(props) {
           href="https://twitter.com/Mostafa__Tawfik" 
           target="_blank "
           rel="noreferrer">
-            <img 
-              src= {router.pathname === '/portfolio/[projectpath]' ? '../images/twitter.png' : 'images/twitter.png'}
-              alt="twitter logo">
-            </img>
+            <Icon icon="logos:twitter" width="35" />
           </a>
       </li>
       <li><a 
           href="https://dribbble.com/Mostafa_Tawfik" 
           target="_blank"
           rel="noreferrer">
-            <img 
-              src={router.pathname === '/portfolio/[projectpath]' ? '../images/dribbble.png' : './images/dribbble.png'}
-              alt="dribbble logo">
-            </img>
+            <Icon icon="logos:dribbble-icon" width="35" />
           </a>
       </li>
       <li><a 
             href="https://www.behance.net/Mostafa_Tawfik" target="_blank"
             rel="noreferrer">
-              <img 
-                src={router.pathname === '/portfolio/[projectpath]' ? '../images/behance.png' : './images/behance.png'}
-                alt="behance logo">
-              </img>
+              <Icon icon="ion:logo-behance" color="blue" width="35" />
           </a>
       </li>
       <li><a 
             href="https://github.com/Mostafa-Tawfik" 
             target="_blank"
             rel="noreferrer">
-              <img 
-                src={router.pathname === '/portfolio/[projectpath]' ? '../images/github.png' : './images/github.png'}
-                alt="github logo">
-              </img>
+              <Icon icon="mdi:github" style={{fontSize: '35px'}}/>
           </a>
       </li>
       <li><a 
             href="https://www.linkedin.com/in/m8ustafa-tawfik/"
             target="_blank" 
             rel="noreferrer">
-              <img 
-                src={router.pathname === '/portfolio/[projectpath]' ? '../images/linkedin.png' : './images/linkedin.png' }
-                alt="linkedin logo">
-              </img>
+              <Icon icon="logos:linkedin-icon" style={{fontSize: '35px'}} />
           </a>
         </li>
     </ul>

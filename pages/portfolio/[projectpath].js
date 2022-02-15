@@ -15,6 +15,8 @@ export default function Project(props) {
 
   const params = useRouter()
 
+  console.log(params)
+
   const [showProject, setShowProject] = React.useState([''])
 
   React.useEffect(()=>{
