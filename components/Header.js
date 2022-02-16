@@ -60,6 +60,32 @@ export default function Header(props) {
     
   }
 
+  // navbar animation
+  const [navbarActive, setNavbarActive] = React.useState(
+    location.pathname !== '/' ? 
+    `${location.pathname.split('/')[1]}Active` : 
+    'homeActive'
+    )
+
+  // handle on hash change
+  React.useEffect(() => {
+    const handleRouteChange = (url) => {
+      setNavbarActive(
+        url !== '/' ? 
+        `${url.split('/')[1]}Active` :
+        'homeActive'
+        )
+    }
+
+    location.events.on('routeChangeStart', handleRouteChange)
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method:
+    return () => {
+      location.events.off('routeChangeStart', handleRouteChange)
+    }
+  }, [])
+
   return <header className={styles.header}>
 
       <h4 className={
@@ -87,9 +113,27 @@ export default function Header(props) {
 
         <div className={styles.navbar}>
           <ul>
-            <Link href='/' >Home</Link>
-            <Link href='/about'>About</Link>
-            <Link href='/portfolio'>Portfolio</Link>
+            <Link href='/'><div 
+            className={
+              navbarActive === 'homeActive' ? 
+              `${styles['navitem']} ${styles['active']}`:
+              `${styles['navitem']}`}
+            >Home</div></Link>
+
+            <Link href='/about'><div 
+            className={
+              navbarActive === 'aboutActive' ? 
+              `${styles['navitem']} ${styles['active']}`:
+              `${styles['navitem']}`}
+            >About</div></Link>
+
+            <Link href='/portfolio'><div 
+            className={
+              navbarActive === 'portfolioActive' ? 
+              `${styles['navitem']} ${styles['active']}`:
+              `${styles['navitem']}`}
+            >Portfolio</div></Link>
+
           </ul>
         </div>
 

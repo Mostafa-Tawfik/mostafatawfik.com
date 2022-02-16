@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react'
 import { motion } from 'framer-motion';
 import styles from '../../styles/Project.module.scss'
 
-export default function Project(props) {
+export default function Project() {
 
   const pageMotion= {
     initial: { opacity: 0, x: 0 },
@@ -14,8 +14,6 @@ export default function Project(props) {
   }
 
   const params = useRouter()
-
-  console.log(params)
 
   const [showProject, setShowProject] = React.useState([''])
 
