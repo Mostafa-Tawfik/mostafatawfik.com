@@ -23,17 +23,8 @@
     }
     /* myResume btn */
     .myResume {
-      padding: 0.5em;
+      @include slideClrBtn;
       margin-top: 1em;
-      cursor: pointer;
-      transition: 0.2s;
-      color: $clr-dark;
-    }
-
-    .myResume:hover {
-      transform: scale(0.99);
-      color: $clr-dark;
-      background-color: $clr-main;
     }
   }
 }

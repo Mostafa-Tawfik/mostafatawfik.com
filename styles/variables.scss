@@ -1,6 +1,7 @@
 // global colors
-$clr-main: rgb(221, 135, 22);
+$clr-main: rgb(253, 127, 32);
 $clr-sec: rgb(224, 162, 80);
+$clr-high: rgb(252, 46, 32);
 $clr-light: rgb(255, 255, 255);
 $clr-dark: rgb(14, 14, 14);
 
@@ -71,4 +72,44 @@ $sf: "Redressed", cursive;
     transform: rotateX(-90deg);
   }
 
+}
+
+// 15
+@mixin slideClrBtn($primeClr:$clr-high, $secClr:#4e060c) {
+  position: relative;
+  cursor: pointer;
+  background: $primeClr;
+  border: none;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 5px 12.5px;
+
+  display: inline-block;
+   box-shadow:inset 1.5px 1.5px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $secClr;
+    border-radius: 5px;
+      box-shadow:inset 1.5px 1.5px 2px 0px rgba(255,255,255,.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    color: #fff;
+    &:after {
+      left: 0;
+      width: 100%;
+    }
+  }
 }

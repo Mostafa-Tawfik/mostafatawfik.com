@@ -91,7 +91,7 @@
 .toggle:hover, .toggle.active:hover {
 transform: scale(1.1);
 background-color: $clr-main;
-filter: invert(0);
+filter: invert(1);
 }
 
 .toggle.active {
