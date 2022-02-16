@@ -104,15 +104,8 @@
   gap: 2em;
 }
 .project-btn {
-  padding: 1em;
-  transition: 0.2s;
-  cursor: pointer;
-  color: $clr-dark;
-  &:hover {
-    color: $clr-light;
-    background-color: $clr-main;
-    transform: scale(0.99);
-  }
+  @include slideSolidBtn;
+  font-size: 1.2rem;
 }
 
 
@@ -129,13 +122,12 @@
   .project h1 {
     font-size: 2rem;
   }
-  .project-btn {
-    color: $clr-dark;
-  }
   .project-overview p {
       font-size: 1rem;
   }
-
+  .project-btn {
+    font-size: 1.1rem;
+  }
   .project-overview, .builtwith, .seemore {
     width: 80%;
   }
@@ -154,6 +146,9 @@
         width: 100%;
       }
     }
+  }
+  .project-btn {
+    font-size: 1rem;
   }
   .project-preview {
     width: 90%;

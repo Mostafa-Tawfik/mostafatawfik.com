@@ -40,6 +40,7 @@
   justify-content: left;
   align-items: center;
   transition: 0.7s;
+  
 }
 
 .social.vertical.active {
@@ -48,6 +49,6 @@
 }
 
 .social.vertical li a:hover {
-  transform: scale(0.8) translateX(-15px);
+  transform: scale(0.8) translateX(-10px);
   transition: 0.3s;
 }

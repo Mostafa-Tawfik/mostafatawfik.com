@@ -125,7 +125,6 @@
   .education-card-desc {
     z-index: 10;
     font-size: 0.9rem;
-    
   }
 
   // education-btn
@@ -140,38 +139,20 @@
     height: 70px;
     border-radius: 50%;
     font-size: 0.7rem;
-    transition: 0.5s;
+    transition: all 0.3s ease;
     cursor: pointer;
-    color: $clr-dark;
+    background: $clr-dark;
+    color: $clr-sec;
+    box-shadow:inset 1px 1px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+
+    &:hover {
+      transform: scale(0.92);
+      
+    }
   }
 
-  .edu-btn:hover {
-    color: $clr-light;
-    background-color: $clr-main;
-    transform: scale(0.9);
-  }
-}
-
-/* old about */
-.social.vertical {
-  position: fixed;
-  right: 0px;
-  top: 40%;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  transition: 0.7s;
-}
-
-.social.vertical.active {
-  right: 205px;
-  
-}
-
-.social.vertical li a:hover {
-  transform: scale(0.8) translateX(-15px);
 }
 
 // services

@@ -16,20 +16,7 @@ export default function SocialLinks(props) {
           href="https://twitter.com/Mostafa__Tawfik" 
           target="_blank "
           rel="noreferrer">
-            <Icon icon="logos:twitter" width="35" />
-          </a>
-      </li>
-      <li><a 
-          href="https://dribbble.com/Mostafa_Tawfik" 
-          target="_blank"
-          rel="noreferrer">
-            <Icon icon="logos:dribbble-icon" width="35" />
-          </a>
-      </li>
-      <li><a 
-            href="https://www.behance.net/Mostafa_Tawfik" target="_blank"
-            rel="noreferrer">
-              <Icon icon="ion:logo-behance" color="blue" width="35" />
+            <Icon icon="bytesize:twitter" color="white" width="35" />
           </a>
       </li>
       <li><a 
@@ -43,9 +30,22 @@ export default function SocialLinks(props) {
             href="https://www.linkedin.com/in/m8ustafa-tawfik/"
             target="_blank" 
             rel="noreferrer">
-              <Icon icon="logos:linkedin-icon" style={{fontSize: '35px'}} />
+              <Icon icon="bxl:linkedin-square" color="white" width="35" />
           </a>
         </li>
+      <li><a 
+          href="https://dribbble.com/Mostafa_Tawfik" 
+          target="_blank"
+          rel="noreferrer">
+            <Icon icon="bi:dribbble" color="white" width="35" />
+          </a>
+      </li>
+      <li><a 
+            href="https://www.behance.net/Mostafa_Tawfik" target="_blank"
+            rel="noreferrer">
+              <Icon icon="ion:logo-behance" color="blue" width="35" />
+          </a>
+      </li>
     </ul>
   </div>;
 }

@@ -2,6 +2,7 @@
 $clr-main: rgb(253, 127, 32);
 $clr-sec: rgb(224, 162, 80);
 $clr-high: rgb(252, 46, 32);
+$clr-low: rgba(78, 6, 12);
 $clr-light: rgb(255, 255, 255);
 $clr-dark: rgb(14, 14, 14);
 
@@ -10,7 +11,7 @@ $mf: "Poppins", sans-serif;
 $pf: 'Josefin Sans', sans-serif;
 $sf: "Redressed", cursive;
 
-/* 12 */
+// mixins
 @mixin flipBtn($width:100px) {
   
   position: relative;
@@ -74,8 +75,7 @@ $sf: "Redressed", cursive;
 
 }
 
-// 15
-@mixin slideClrBtn($primeClr:$clr-high, $secClr:#4e060c) {
+@mixin slideClrBtn($primeClr:$clr-high, $secClr:rgb(78, 6, 12)) {
   position: relative;
   cursor: pointer;
   background: $primeClr;
@@ -109,6 +109,29 @@ $sf: "Redressed", cursive;
     color: #fff;
     &:after {
       left: 0;
+      width: 100%;
+    }
+  }
+}
+
+@mixin slideSolidBtn($primeClr:$clr-light) {
+  position: relative;
+  cursor: pointer;
+  color: $primeClr;
+  border: none;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 5px 12.5px;
+  background: linear-gradient(0deg, rgba(78, 6, 12,1) 0%, rgba(252, 46, 32,1) 100%);
+  display: inline-block;
+
+  &:hover {
+    color: $primeClr;
+    background: linear-gradient(0deg, rgba(252, 46, 32,1) 0%, rgb(255, 17, 0) 100%);
+
+    &:after {
+      left: auto;
+      right: 0;
       width: 100%;
     }
   }

@@ -40,7 +40,7 @@ export default function about() {
           <br></br>
           <p>I build meaningful, usable yet joyful user experiences with a user-centered design approach.</p>
           <br></br>
-          <p>Enhancing online content in order to improve the quality and quantity of website traffic and improve the website's position in search results pages.</p>
+          <p>Enhancing online content in order to improve the quality and quantity of website traffic and improve the website's position in search results pages.</p> 
           <button onClick={() => {
             window.open("../Mostafa-Tawfik-Resume.pdf", "_blank")}} className={styles.myResume}>My Resume</button>
         </div>
