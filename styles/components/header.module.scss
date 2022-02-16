@@ -40,6 +40,19 @@
   }
 }
 
+.navitem {
+  @include flipBtn(100px);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navitem.active {
+  transform: translate3d(0, -.3em , 0);
+  color: $clr-dark;
+  animation: pulse 0.4s;
+  animation-delay: 0.3s;
+}
+
 // header
 .logo {
   display: flex;
@@ -105,6 +118,25 @@ filter: invert(0);
   color: $clr-light;
 }
 
+// animations
+@keyframes pulse {
+  from {
+      opacity   : 1;
+  }
+  20% {
+      opacity   : 0;
+  }
+  40% {
+      opacity   : 1;
+  }
+  60% {
+      opacity   : 0;
+  }
+  to {
+      opacity   : 1;
+  }
+}
+
 // responsive
 @media (max-width: 800px) {
 
@@ -137,62 +169,5 @@ filter: invert(0);
 
   .logo {
     font-size: 1em;
-  }
-}
-
-
-.navbar {
-  position: relative;
-}
-
-.navitem {
-  cursor: pointer;
-  transition: 1s;
-}
-
-.navitem::before{
-    
-  content: "";
-  z-index: -1;
-  top: -6px;
-  left: -5%;
-  width: 110%;
-  height: 2.1em;
-  border-radius: 20%;
-  position: absolute;
-  // transform: scale(0);
-  transition: 0.5s;
-}
-
-.navitem.active::before{
-    
-  // transform: scale(1);
-  background-color: $clr-light;
-  animation: pulse 0.2s;
-}
-
-.navitem.active {
-
-  transform: translate3d(0, -.3em , 0);
-  color: $clr-dark;
-  animation: pulse 0.4s;
-  animation-delay: 0.3s;
-}
-
-@keyframes pulse {
-  from {
-      opacity   : 1;
-  }
-  20% {
-      opacity   : 0;
-  }
-  40% {
-      opacity   : 1;
-  }
-  60% {
-      opacity   : 0;
-  }
-  to {
-      opacity   : 1;
   }
 }
