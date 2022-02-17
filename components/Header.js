@@ -118,21 +118,21 @@ export default function Header(props) {
               navbarActive === 'homeActive' ? 
               `${styles['navitem']} ${styles['active']}`:
               `${styles['navitem']}`}
-            ><span>Click!</span><span>Home</span></div></Link>
+            ><span>Home</span><span>Home</span></div></Link>
 
             <Link href='/about'><div 
             className={
               navbarActive === 'aboutActive' ? 
               `${styles['navitem']} ${styles['active']}`:
               `${styles['navitem']}`}
-            ><span>Click!</span><span>About</span></div></Link>
+            ><span>About</span><span>About</span></div></Link>
 
             <Link href='/portfolio'><div 
             className={
               navbarActive === 'portfolioActive' ? 
               `${styles['navitem']} ${styles['active']}`:
               `${styles['navitem']}`}
-            ><span>Click!</span><span>Portfolio</span></div></Link>
+            ><span>Portfolio</span><span>Portfolio</span></div></Link>
 
           </ul>
         </div>
