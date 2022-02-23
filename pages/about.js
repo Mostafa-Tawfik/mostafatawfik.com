@@ -7,6 +7,7 @@ import Education from '../components/Education';
 import MyStack from '../components/MyStack';
 import Services from '../components/Services';
 import Head from 'next/head';
+import Carousel from '../components/Carousel';
 
 
 export default function about() {
@@ -44,8 +45,11 @@ export default function about() {
           <button onClick={() => {
             window.open("../Mostafa-Tawfik-Resume.pdf", "_blank")}} className={styles.myResume}>My Resume</button>
         </div>
-          <DisplayLottie lottiePath= {development} height={400} />
+          <Carousel />
+
+          {/* <DisplayLottie lottiePath= {development} height={400} /> */}
         </section>
+        
         
         <Services />
         <MyStack />

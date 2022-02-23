@@ -1,6 +1,10 @@
 @import './variables.scss';
 
 .about-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* About Header */
   .about-header {
     display: flex;
@@ -219,6 +223,12 @@
 =================*/
 
 @media (max-width: 800px) {
+  .about-layout {
+    .about-header {
+      flex-direction: column;
+      gap: 4em;
+    }
+  }
   .about-header-desc {
     width: 80vw;
     z-index: 10;
