@@ -23,9 +23,15 @@ function Carousel() {
             'opacity': Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
             'display': Math.abs(active - i) > MAX_VISIBILITY ? 'none' : 'block',
           }}>
+
             <div className={styles['card']}>
-              <h2>{pro.title}</h2>
-              <p>{pro.desc}</p>
+
+            <img src='../../images/iphone.png' alt='preview' className={styles['project-mobile']}></img>
+
+            <div className={styles["project-image-mobile"]} style={{backgroundImage:`url(${pro.imageMobile})`}}></div>
+              
+              {/* <h2>{pro.title}</h2>
+              <p>{pro.desc}</p> */}
             </div>
         </div>
       ))}

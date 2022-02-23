@@ -223,6 +223,12 @@
 =================*/
 
 @media (max-width: 800px) {
+  .about-layout {
+    .about-header {
+      flex-direction: column;
+      gap: 4em;
+    }
+  }
   .about-header-desc {
     width: 80vw;
     z-index: 10;

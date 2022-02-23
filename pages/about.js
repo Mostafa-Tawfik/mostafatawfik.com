@@ -45,10 +45,12 @@ export default function about() {
           <button onClick={() => {
             window.open("../Mostafa-Tawfik-Resume.pdf", "_blank")}} className={styles.myResume}>My Resume</button>
         </div>
-          <DisplayLottie lottiePath= {development} height={400} />
+          <Carousel />
+
+          {/* <DisplayLottie lottiePath= {development} height={400} /> */}
         </section>
         
-        <Carousel />
+        
         <Services />
         <MyStack />
         <Education />
