@@ -21,7 +21,7 @@ export default function Header(props) {
         return { 
           prev,
           nextPage: '/about',
-          prevPage: '/portfolio'
+          prevPage: '/contact'
         }
       } else if (location.pathname === '/about') {
         return { 
