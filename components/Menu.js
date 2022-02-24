@@ -24,6 +24,12 @@ export default function Menu(props) {
             Portfolio
           </a></Link>
         </li>
+        <li>
+        <Link href={'/contact'}>     
+          <a className={styles["menuLi"]} onClick={props.toggle}>
+            Contact
+          </a></Link>
+        </li>
       </ul>
     </div>
   </div>;

@@ -32,14 +32,20 @@ export default function Header(props) {
       } else if (location.pathname === '/portfolio') {
         return { 
           prev,
-          nextPage: '/',
+          nextPage: '/contact',
           prevPage: '/about'
+        }
+      } else if (location.pathname === '/contact') {
+        return { 
+          prev,
+          nextPage: '/',
+          prevPage: '/portfolio'
         }
       } else {
         return {
           prev,
           nextPage: '/',
-          prevPage: '/portfolio'
+          prevPage: '/contact'
         }
       }
     })
@@ -133,6 +139,13 @@ export default function Header(props) {
               `${styles['navitem']} ${styles['active']}`:
               `${styles['navitem']}`}
             ><span>Portfolio</span><span>Portfolio</span></div></Link>
+
+            <Link href='/contact'><div 
+            className={
+              navbarActive === 'contactActive' ? 
+              `${styles['navitem']} ${styles['active']}`:
+              `${styles['navitem']}`}
+            ><span>contact</span><span>contact</span></div></Link>
 
           </ul>
         </div>

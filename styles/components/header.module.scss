@@ -19,7 +19,6 @@
   ul {
     display: flex;
     gap: 1em;
-    padding: 1em;
     width: 600px;
     justify-content: center;
     align-items: center;
@@ -41,7 +40,7 @@
 }
 
 .navitem {
-  @include flipBtn(160px);
+  @include flipBtn(150px);
   cursor: pointer;
   transition: 1s;
 }
@@ -147,15 +146,15 @@ filter: invert(1);
     }
   }
   .navitem {
-    @include flipBtn(100px);
+    @include flipBtn(90px);
     cursor: pointer;
     transition: 1s;
   }
   .navbar {
     ul {
       gap: 1em;
-      padding: 1em;
-      width: 400px;
+      padding-top: 1em;
+      width: 360px;
       font-size: 1rem;
     }
   }
