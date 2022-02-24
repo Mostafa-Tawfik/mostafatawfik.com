@@ -1,20 +1,33 @@
 @import './variables.scss';
 
 .form {
-  width: 60vw;
+  width: min(60vw, 500px);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+  }
   .form-control {
     width: 100%;
-    height: 50px;
+    height: 70px;
     color: $clr-dark;
     text-indent: 1em;
+    border-radius: 10px;
   }
   .message-box {
     width: 100%;
     height: 150px;
     padding: 1em;
     color: $clr-dark;
+    border-radius: 10px;
   }
   .submit-btn {
     @include slideSolidBtn;
+    font-size: 1.5rem;
   }
 }
