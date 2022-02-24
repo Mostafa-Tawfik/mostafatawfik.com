@@ -14,6 +14,7 @@ module.exports = {
       '/portfolio/dynamiclandingpage': { page: '/portfolio/[projectpath]'},
       '/portfolio/weatherjournalapp': { page: '/portfolio/[projectpath]'},
       '/portfolio/mygames': { page: '/portfolio/[projectpath]'},
+      '/contact': { page: '/contact' },
     }
   },
   // images: {
