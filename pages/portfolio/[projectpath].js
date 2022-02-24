@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useRouter } from 'next/router'
 import AppData from '../../AppData'
 import { Icon } from '@iconify/react'
 import { motion } from 'framer-motion';
 import styles from '../../styles/Project.module.scss'
+import Link from 'next/link';
 
 export default function Project() {
 
@@ -75,6 +76,50 @@ export default function Project() {
               window.open(showProject.git)}} className={styles['project-btn']}>CODE LINK</button>
             </div>
           </section>
+
+          <footer className={styles['project-footer']}>
+
+            {AppData.Projects.map(pro => {
+              if (showProject.id === pro.id)
+              return (
+
+                <Fragment key={pro.id}>
+
+                  {AppData.Projects.filter(pro => pro.id === showProject.id -1).map(p => {
+                    return (
+                      <Link href={'/portfolio/' + p.path} key={p.id}> 
+                        <div className={styles['project-footer_btn-container']}>
+                          <button className={styles['project-footer_btn']}>&laquo;</button>
+                          <div>
+                            <h6>{p.title}</h6>
+                            <p>Previous Project</p>
+                          </div>
+                        </div>
+                      </Link>
+                    )
+                    })}
+
+                  {AppData.Projects.filter(pro => pro.id === showProject.id +1).map(p => {
+                    return (
+                      <Link href={'/portfolio/' + p.path} key={p.id}> 
+                        <div className={styles['project-footer_btn-container']}>
+                          <div>
+                            <h6>{p.title}</h6>
+                            <p>Next Project</p>
+                          </div>
+                          <button className={styles['project-footer_btn']}>&raquo;</button>
+                        </div>
+                      </Link>
+                    )
+                    })}
+
+                </Fragment>
+              )
+            })}
+
+
+          </footer>
+
         </section>
       </section>
       </motion.div>
