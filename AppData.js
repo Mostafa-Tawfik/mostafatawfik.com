@@ -119,15 +119,15 @@ export default {
   ],
   Projects: [
     {
-      id: 1,
-      path: 'myreads',
-      title: 'My Reads',
-      desc: 'A bookshelf app that allows you to select and categorize books.',
-      url: 'https://my-reads-beta.vercel.app/',
-      git: 'https://github.com/Mostafa-Tawfik/My-Reads',
-      image: '../../images/myReads.webp',
-      imageMobile: '../../images/myReadsM.webp',
-      builtWith: ['HTML 5','CSS3', 'JavaScript', "React"],
+      id: 5,
+      path: 'mygames',
+      title: 'My Games',
+      desc: `An app that allows you to browse, search,  and categorize your favorite games.`,
+      url: 'https://50-fivers-games.vercel.app/',
+      git: 'https://github.com/Mostafa-Tawfik/my-games',
+      image: '../../images/myGamesL.webp',
+      imageMobile: '../../images/myGamesP.webp',
+      builtWith: ['HTML 5', 'SASS', 'JavaScript', 'React' , 'Next.js'],
     },
     {
       id: 2,
@@ -138,8 +138,19 @@ export default {
       url: 'https://www.mostafatawfik.com/',
       git: 'https://github.com/Mostafa-Tawfik/mostafatawfik.com',
       image: '../../images/mtL.webp',
-      imageMobile: '../../images/mtP.png',
+      imageMobile: '../../images/mtP.webp',
       builtWith: ['HTML 5','SASS', 'JavaScript', "React", 'Next.js'],
+    },
+    {
+      id: 1,
+      path: 'myreads',
+      title: 'My Reads',
+      desc: 'A bookshelf app that allows you to select and categorize books.',
+      url: 'https://my-reads-beta.vercel.app/',
+      git: 'https://github.com/Mostafa-Tawfik/My-Reads',
+      image: '../../images/myReads.webp',
+      imageMobile: '../../images/myReadsM.webp',
+      builtWith: ['HTML 5','CSS3', 'JavaScript', "React"],
     },
     {
       id: 3,
@@ -164,17 +175,6 @@ export default {
       imageMobile: '../../images/weatherAppP.webp',
       builtWith: ['HTML 5','CSS3', 'JavaScript', "Node.js"],
     },
-    {
-      id: 5,
-      path: 'mygames',
-      title: 'My Games',
-      desc: `A mockup design for gaming store, build it with pure
-      HTML and CSS.`,
-      url: 'https://50-fivers-games.vercel.app/',
-      git: 'https://github.com/Mostafa-Tawfik/my-games',
-      image: '../../images/myGamesL.webp',
-      imageMobile: '../../images/myGamesP.webp',
-      builtWith: ['HTML 5','SASS', 'JavaScript', 'SASS'],
-    },
+
   ]
 } 
