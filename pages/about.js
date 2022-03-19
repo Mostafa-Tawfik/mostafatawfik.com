@@ -49,7 +49,7 @@ export default function about() {
           My Resume</a></button>
           </div>
 
-          <Carousel />
+          {/* <Carousel /> */}
 
         </section>
                 
