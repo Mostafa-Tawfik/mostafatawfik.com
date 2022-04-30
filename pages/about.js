@@ -37,7 +37,7 @@ export default function about() {
 
           <div className={styles['about-header-desc']}>
             <h1>Hi .. I'm Mostafa</h1>
-            <p>A Front-End web developer and UI/UX designer well-versed in Scrum and Agile with experience in building and designing static and dynamic responsive web applications with JavaScript / React / Next.js / SASS / Tailwind and other libraries like Framer Motion and Lottie etc ... </p>
+            <p>A Front-End web developer and UI/UX designer well-versed in Scrum and Agile with experience in building and designing static and dynamic responsive web applications with JavaScript / React / Next.js / Redux / React-Query / SASS / Tailwind and other libraries like Framer Motion and Lottie etc ... </p>
             <br></br>
             <p>I build meaningful, usable yet joyful user experiences with a user-centered design approach.</p>
             <br></br>

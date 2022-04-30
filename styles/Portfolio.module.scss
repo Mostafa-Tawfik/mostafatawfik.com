@@ -134,6 +134,9 @@
 }
 
 @media (max-width: 440px) {
+  .card-section {
+    margin: 3em 0 0;
+  }
   .card-holder {
     flex-direction: column-reverse;
     height: 450px;

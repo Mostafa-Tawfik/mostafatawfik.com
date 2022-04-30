@@ -27,6 +27,14 @@ export default {
       url: "file-icons:nextjs",
     },
     {
+      name: "Redux",
+      url: "logos:redux",
+    },
+    {
+      name: "React-Query",
+      url: "logos:react-query-icon",
+    },
+    {
       name: "Node.js",
       url: "logos:nodejs-icon",
     },
@@ -119,10 +127,21 @@ export default {
   ],
   Projects: [
     {
+      id: 6,
+      path: 'e-shop',
+      title: 'E-Shop',
+      desc: `A full E-commerce project, a website that allows you to buy and sell any kind of product, contains a user interface and fully functional admin dashboard.`,
+      url: 'https://sprints-ecommerce.herokuapp.com/',
+      git: 'https://github.com/Mostafa-Tawfik/e-shop',
+      image: '../../images/e-shopL.webp',
+      imageMobile: '../../images/e-shopP.webp',
+      builtWith: ['HTML 5', 'SASS', 'JavaScript', 'React' , 'React-Query'],
+    },
+    {
       id: 5,
       path: 'mygames',
       title: 'My Games',
-      desc: `An app that allows you to browse, search,  and categorize your favorite games.`,
+      desc: `An app lets you discover trending, new releases, upcoming games, and search for your favorite titles, plus news and reviews sections.`,
       url: 'https://50-fivers-games.vercel.app/',
       git: 'https://github.com/Mostafa-Tawfik/my-games',
       image: '../../images/myGamesL.webp',
