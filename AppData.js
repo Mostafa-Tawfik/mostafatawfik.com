@@ -127,6 +127,17 @@ export default {
   ],
   Projects: [
     {
+      id: 7,
+      path: 'sprints-bank',
+      title: 'Sprints online banking',
+      desc: `Sprints online banking web application Project built with MERN Stack.`,
+      url: 'https://sprints-bank.herokuapp.com/',
+      git: 'https://github.com/Sprints-Team-13/OnlineBanking',
+      image: '../../images/sprints-bankL.png',
+      imageMobile: '../../images/sprints-bankP.png',
+      builtWith: ['HTML 5', 'SASS', 'JavaScript', 'React' , 'React-Query'],
+    },
+    {
       id: 6,
       path: 'e-shop',
       title: 'E-Shop',
