@@ -34,6 +34,12 @@ function MyApp({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="I'm Mostafa Tawfik a Front-End web developer and UI/UX designer with experience in building and designing static and dynamic responsive websites." />
+        <meta property={'og:title'} content='Mostafa Tawfik'/>
+        <meta property='og:image' content='https://i.ibb.co/pWbjdQd/mtL.png'/>
+        <meta property='og:description' content="I'm Mostafa Tawfik a Front-End web developer and UI/UX designer with experience in building and designing static and dynamic responsive websites."/>
+        <meta property='og:url' content='https://www.mostafatawfik.com/'/>
+        <meta property='og:image:width' content='1802' />
+        <meta property='og:image:height' content='1122' />
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
