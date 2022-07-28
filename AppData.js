@@ -184,8 +184,84 @@ export default {
       git: 'https://github.com/Sprints-Team-13/OnlineBanking',
       image: 'https://i.ibb.co/MNtwyZC/sprints-bank-L.webp',
       imageMobile: 'https://i.ibb.co/mCGKS7h/sprints-bank-P.webp',
-      builtWith: ['HTML 5', 'SASS', 'JavaScript', 'React' , 'React-Query'],
-      overview: ''
+      builtWith: ['HTML 5', 'SASS', 'JavaScript', 'React' , 'React-Query', 'Material UI'],
+      overview: [
+        {
+          section: {
+            desc: 'For direct login',
+            img: 'https://i.ibb.co/xYJPbYr/github-com-Sprints-Team-13-Online-Banking.png'
+          }
+        },
+        {
+          section: {
+            desc: 'Landing page',
+            img: 'https://i.ibb.co/qkVpRcg/sprints-bank-herokuapp-com.png'
+          }
+        },
+        {
+          section: {
+            desc: 'Users dashboard overview page',
+            img: 'https://i.ibb.co/kXqQhwh/sprints-bank-herokuapp-com-1.png'
+          }
+        },
+        {
+          section: {
+            desc: 'Users create a new account that needs admin approval, and cant withdraw more than they have in their accounts.',
+            img: 'https://i.ibb.co/QM1m9Tp/sprints-bank-herokuapp-com.png'
+          }
+        },
+        {
+          section: {
+            desc: 'Users can transfer money between their accounts or to other users accounts, all accounts must be active and the sender account should cover the transferred amount.',
+            img: 'https://i.ibb.co/BCpNH4h/sprints-bank-herokuapp-com.png'
+          }
+        },
+        {
+          section: {
+            desc: 'Users can see their transactions in detail including transaction id, type, date, description, and account number.',
+            img: 'https://i.ibb.co/724Mj9X/sprints-bank-herokuapp-com-1.png'
+          }
+        },
+        {
+          section: {
+            desc: 'Admin dashboard overview page.',
+            img: 'https://i.ibb.co/MCgB48T/sprints-bank-herokuapp-com.png'
+          }
+        },
+        {
+          section: {
+            desc: "Admin can see all users and go to a specific user's detail page.",
+            img: 'https://i.ibb.co/fkNHMtq/sprints-bank-herokuapp-com-1.png'
+          }
+        },
+        {
+          section: {
+            desc: "Admin can see the personal Infos in user's page and can activate, deactivate or suspend user's accounts, and see all his transactions.",
+            img: 'https://i.ibb.co/31WCfR7/sprints-bank-herokuapp-com-1.png'
+          }
+        },
+        {
+          section: {
+            desc: "Admin can see all accounts in the database and search for certain ones using an account id or user id and can activate or deactivate them.",
+            img: 'https://i.ibb.co/tBPtVT6/sprints-bank-herokuapp-com.png'
+          }
+        },
+        {
+          section: {
+            desc: "Admin can see all transactions in the database and search for certain ones using a transaction id, user id, or account number.",
+            img: 'https://i.ibb.co/VL3b1J9/sprints-bank-herokuapp-com.png'
+          }
+        },
+      ],
+      credits: [
+        {
+          role: '',
+          github: '',
+          linkedin: '',
+          img: '',
+          desc: ''
+        }
+      ]
     },
     {
       id: 6,
