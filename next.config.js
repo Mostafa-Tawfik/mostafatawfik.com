@@ -14,11 +14,10 @@ module.exports = {
       '/portfolio/dynamiclandingpage': { page: '/portfolio/[projectpath]'},
       '/portfolio/weatherjournalapp': { page: '/portfolio/[projectpath]'},
       '/portfolio/mygames': { page: '/portfolio/[projectpath]'},
+      '/portfolio/nextflix': { page: '/portfolio/[projectpath]'},
+      '/portfolio/sprints-bank': { page: '/portfolio/[projectpath]'},
+      '/portfolio/e-shop': { page: '/portfolio/[projectpath]'},
       '/contact': { page: '/contact' },
     }
   },
-  // images: {
-  //   domains: ['assets.vercel.com'],
-  //   formats: ['image/png', 'image/webp'],
-  // },
 }

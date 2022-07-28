@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }) {
           <section 
           className={`showcase ${location.pathname.split('/')[1].   toLowerCase()} ${isActive.menuActive ? 'active' : ''}`}>  
 
-            <img className="bg" src='../../images/raw3.png' alt="keyboard background"></img>
+            <img className="bg" src='https://i.ibb.co/y4rTdR6/raw3.webp' alt="keyboard background"></img>
             <Component {...pageProps} />
 
           <Footer />

@@ -27,7 +27,10 @@ export default function Project() {
 
     const builtStack = showProject.builtWith && AppData.myStack.filter(f => showProject.builtWith.includes(f.name)).map((s,i) => {
       return (
-          <Icon className={styles['icon']} key={i} icon={s.url} style={{fontSize: '80px'}} />
+        <div className={styles['stack']} key={i}>
+          <Icon className={styles['icon']} icon={s.url} width={50} />
+          <p>{s.name}</p>
+        </div>
       )
     })
 
@@ -55,16 +58,22 @@ export default function Project() {
               <div className={styles["project-image-mobile"]} style={{backgroundImage:`url(${showProject.imageMobile})`}}></div>
             </div>
           </div>
-          <section className={styles['project-overview']}>
-            <h1 className={styles['project-overview-title']}>Project Overview</h1>
-            <p className={styles['project-overview-desc']}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias tenetur minus quaerat aliquid, aut provident blanditiis, deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias tenetur minus quaerat aliquid, aut provident blanditiis, deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae mollitia laborum corrupti ullam rem?</p>
-          </section>
 
           <section className={styles['builtwith']}>
             <h1 className={styles['builtwith-title']}>Built With</h1>
             <div className={styles['builtwith-stack']}>
               {builtStack}
             </div>
+          </section>
+
+          <section className={styles['project-overview']}>
+            <h1 className={styles['project-overview-title']}>Project Overview</h1>
+            {showProject.overview?.map?.((over,i) => (
+              <div key={i} className={styles['project-overview-section']}>
+                <p>{over.section.desc}</p>
+                <img src={over.section.img} alt="project section" />
+              </div>
+            )) || 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores doloribus vel dolore libero repellendus adipisci culpa. Odit sapiente nulla eligendi eius deleniti. Voluptatibus harum sint ea reiciendis earum ut corporis eos eum expedita sapiente. Explicabo corrupti perferendis deserunt obcaecati doloremque?'} 
           </section>
 
           <section className={styles['seemore']}>

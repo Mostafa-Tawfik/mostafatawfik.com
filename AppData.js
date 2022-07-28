@@ -11,20 +11,20 @@ export default {
       url: "vscode-icons:file-type-css",
     },
     {
-      name: "SASS",
-      url: "logos:sass",
-    },
-    {
       name: "JavaScript",
       url: "logos:javascript",
     },
     {
-      name: "React",
-      url: "vscode-icons:file-type-reactjs",
+      name: "SASS",
+      url: "logos:sass",
     },
     {
-      name: "Next.js",
-      url: "file-icons:nextjs",
+      name: "Tailwind",
+      url: "vscode-icons:file-type-tailwind",
+    },
+    {
+      name: "React",
+      url: "vscode-icons:file-type-reactjs",
     },
     {
       name: "Redux",
@@ -35,8 +35,20 @@ export default {
       url: "logos:react-query-icon",
     },
     {
+      name: "Material UI",
+      url: "logos:material-ui",
+    },
+    {
+      name: "Next.js",
+      url: "file-icons:nextjs",
+    },
+    {
       name: "Node.js",
       url: "logos:nodejs-icon",
+    },
+    {
+      name: "Firebase",
+      url: "logos:firebase",
     },
     {
       name: "NPM",
@@ -54,8 +66,8 @@ export default {
       title:'CS50',
       location: 'HarvardX',
       field: 'Computer Software Engineering',
-      startDate: 'Feb-2022',
-      endDate: 'Jun-2022',
+      startDate: 'Jul-2022',
+      endDate: 'Dec-2022',
       desc:'Harvard University introduction to the intellectual enterprises of computer science and the art of programming.',
       credential: '',
       more: 'https://cs50.harvard.edu/x/2022/',
@@ -127,15 +139,53 @@ export default {
   ],
   Projects: [
     {
+      id: 8,
+      path: 'nextflix',
+      title: 'Nextflix',
+      desc: `A Movies Library App with Netflix ux/ui where you can search, surf, and save your favoraite shows.`,
+      url: 'https://nextflix-6b685.web.app/',
+      git: 'https://github.com/Mostafa-Tawfik/nextflix',
+      image: 'https://i.ibb.co/1QQKRkV/nextflix-L.webp',
+      imageMobile: 'https://i.ibb.co/5X0L5Mq/nextflix-P.webp',
+      builtWith: ['HTML 5', 'Tailwind', 'JavaScript', 'React' , 'Firebase'],
+      overview: [
+        {
+          section: {
+            desc: 'A homepage shows a random show as main hero and shelfs of popular, trending, upcoming, and in theatres shows.',
+            img: 'https://i.ibb.co/Rb1FGbT/nextflix-overview1-L.webp'
+          }
+        },
+        {
+          section: {
+            desc: 'A detailed page where the user find infos, trailer, and recommended shows.',
+            img: 'https://i.ibb.co/8dymVVG/nextflix-6b685-web-app.png'
+          }
+        },
+        {
+          section: {
+            desc: 'User can create an account using email and password or using google account.',
+            img: 'https://i.ibb.co/Jm29KFS/nextflix-6b685-web-app.png'
+          }
+        },
+        {
+          section: {
+            desc: 'User can save favorite shows.',
+            img: 'https://i.ibb.co/Sww6p4Z/nextflix-6b685-web-app-1.webp'
+          }
+        },
+      ]
+    },
+    {
       id: 7,
       path: 'sprints-bank',
       title: 'Sprints online banking',
       desc: `Sprints online banking web application Project built with MERN Stack.`,
       url: 'https://sprints-bank.herokuapp.com/',
       git: 'https://github.com/Sprints-Team-13/OnlineBanking',
-      image: '../../images/sprints-bankL.png',
-      imageMobile: '../../images/sprints-bankP.png',
+      image: 'https://i.ibb.co/MNtwyZC/sprints-bank-L.webp',
+      imageMobile: 'https://i.ibb.co/mCGKS7h/sprints-bank-P.webp',
       builtWith: ['HTML 5', 'SASS', 'JavaScript', 'React' , 'React-Query'],
+      overview: ''
     },
     {
       id: 6,
@@ -144,9 +194,10 @@ export default {
       desc: `A full E-commerce project, a website that allows you to buy and sell any kind of product, contains a user interface and fully functional admin dashboard.`,
       url: 'https://sprints-ecommerce.herokuapp.com/',
       git: 'https://github.com/Mostafa-Tawfik/e-shop',
-      image: '../../images/e-shopL.webp',
-      imageMobile: '../../images/e-shopP.webp',
+      image: 'https://i.ibb.co/NCT7LN1/e-shopL.webp',
+      imageMobile: 'https://i.ibb.co/sWWK2xv/e-shopP.webp',
       builtWith: ['HTML 5', 'SASS', 'JavaScript', 'React' , 'React-Query'],
+      overview: ''
     },
     {
       id: 5,
@@ -155,9 +206,10 @@ export default {
       desc: `An app lets you discover trending, new releases, upcoming games, and search for your favorite titles, plus news and reviews sections.`,
       url: 'https://50-fivers-games.vercel.app/',
       git: 'https://github.com/Mostafa-Tawfik/my-games',
-      image: '../../images/myGamesL.webp',
-      imageMobile: '../../images/myGamesP.webp',
+      image: 'https://i.ibb.co/N9dQ6Pg/myGamesL.webp',
+      imageMobile: 'https://i.ibb.co/JCc2q10/myGamesP.webp',
       builtWith: ['HTML 5', 'SASS', 'JavaScript', 'React' , 'Next.js'],
+      overview: ''
     },
     {
       id: 2,
@@ -167,9 +219,10 @@ export default {
       built and designed from scratch.`,
       url: 'https://www.mostafatawfik.com/',
       git: 'https://github.com/Mostafa-Tawfik/mostafatawfik.com',
-      image: '../../images/mtL.webp',
-      imageMobile: '../../images/mtP.webp',
+      image: 'https://i.ibb.co/fMPTPzw/mtL.webp',
+      imageMobile: 'https://i.ibb.co/GtJ0RRS/mtP.webp',
       builtWith: ['HTML 5','SASS', 'JavaScript', "React", 'Next.js'],
+      overview: ''
     },
     {
       id: 1,
@@ -178,9 +231,10 @@ export default {
       desc: 'A bookshelf app that allows you to select and categorize books.',
       url: 'https://my-reads-beta.vercel.app/',
       git: 'https://github.com/Mostafa-Tawfik/My-Reads',
-      image: '../../images/myReads.webp',
-      imageMobile: '../../images/myReadsM.webp',
+      image: 'https://i.ibb.co/VJyRLFh/myReads.webp',
+      imageMobile: 'https://i.ibb.co/BNnmPV5/myReadsM.webp',
       builtWith: ['HTML 5','CSS3', 'JavaScript', "React"],
+      overview: ''
     },
     {
       id: 3,
@@ -190,9 +244,10 @@ export default {
       the navigational menu based on sections amount.`,
       url: 'https://landingpage-chi-six.vercel.app/',
       git: 'https://github.com/Mostafa-Tawfik/Landingpage',
-      image: '../../images/dynamicLandingPageL.webp',
-      imageMobile: '../../images/dynamicLandingPageP.webp',
+      image: 'https://i.ibb.co/5cW7qDf/dynamic-Landing-Page-L.webp',
+      imageMobile: 'https://i.ibb.co/QPLNNX0/dynamic-Landing-Page-P.webp',
       builtWith: ['HTML 5','CSS3', 'JavaScript',],
+      overview: ''
     },
     {
       id: 4,
@@ -201,9 +256,10 @@ export default {
       desc: `An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.`,
       url: 'https://mt-weather-journal-app.herokuapp.com/',
       git: 'https://github.com/Mostafa-Tawfik/Weather-Journal-App',
-      image: '../../images/weatherAppL.webp',
-      imageMobile: '../../images/weatherAppP.webp',
+      image: 'https://i.ibb.co/FJcqDc7/weather-App-L.webp',
+      imageMobile: 'https://i.ibb.co/Lx4MHh1/weather-App-P.webp',
       builtWith: ['HTML 5','CSS3', 'JavaScript', "Node.js"],
+      overview: ''
     },
 
   ]

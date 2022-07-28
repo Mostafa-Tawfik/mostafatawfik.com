@@ -85,10 +85,40 @@
   }
 }
 
+.project-overview-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  background: rgb(128, 128, 128, 0.1);
+  padding: 1.5rem;
+  border-radius: 20px;
+
+  img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
 .builtwith-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
+
+  .stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .icon {
