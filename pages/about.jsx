@@ -5,8 +5,6 @@ import Education from '../components/Education';
 import MyStack from '../components/MyStack';
 import Services from '../components/Services';
 import Head from 'next/head';
-import Carousel from '../components/Carousel';
-
 
 export default function about() {
   const pageMotion= {

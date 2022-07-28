@@ -4,10 +4,10 @@ import Head from 'next/head'
 import { Fragment } from 'react'
 import { useRouter } from 'next/router'
 import { AnimatePresence } from "framer-motion"
-import Header from '../components/Header'
-import SocialLinks from '../components/SocialLinks'
-import Footer from '../components/Footer'
-import Menu from '../components/Menu'
+import Header from '../layout/Header'
+import SocialLinks from '../layout/SocialLinks'
+import Footer from '../layout/Footer'
+import Navbar from '../layout/Navbar'
 
 function MyApp({ Component, pageProps }) {
   const [isActive, setIsActive] = React.useState({
@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }) {
           </section>
         </AnimatePresence>
         <SocialLinks isActive={isActive}/>
-        <Menu toggle={toggleMenu}/>
+        <Navbar toggle={toggleMenu}/>
       </section>
 
     </Fragment>

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import stack from '../public/Lottie/stack.json'
 import AppData from '../AppData'
 import { Icon } from '@iconify/react'
-import DisplayLottie from '../components/DisplayLottie'
+import DisplayLottie from '../helpers/DisplayLottie'
 import { motion } from 'framer-motion'
 import styles from '../styles/About.module.scss'
 

@@ -2,9 +2,9 @@ import React from 'react';
 import styles from '../styles/components/Menu.module.scss'
 import Link from 'next/link';
 
-export default function Menu(props) {
+export default function Navbar(props) {
   return <div>
-    <div className={styles['menu']}>
+    <nav className={styles['menu']}>
       <ul >
         <li>
         <Link href={'/'}>     
@@ -31,6 +31,6 @@ export default function Menu(props) {
           </a></Link>
         </li>
       </ul>
-    </div>
+    </nav>
   </div>;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import AppData from '../AppData';
-import DisplayLottie from '../components/DisplayLottie';
+import DisplayLottie from '../helpers/DisplayLottie';
 import DESIGN from '../public/Lottie/DESIGN.json'
 import { Icon } from '@iconify/react'
 import styles from '../styles/About.module.scss'
