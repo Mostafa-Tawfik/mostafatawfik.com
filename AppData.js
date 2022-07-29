@@ -39,6 +39,10 @@ export default {
       url: "logos:material-ui",
     },
     {
+      name: "Framer Motion",
+      url: "simple-icons:framer",
+    },
+    {
       name: "Next.js",
       url: "file-icons:nextjs",
     },
@@ -59,7 +63,6 @@ export default {
       url: "logos:git-icon",
     },
   ],
-
   education: [
     {
       id: 1,
@@ -255,12 +258,17 @@ export default {
       ],
       credits: [
         {
-          role: '',
-          github: '',
-          linkedin: '',
-          img: '',
-          desc: ''
-        }
+          name: 'Mostafa Tawfik',
+          role: 'Frontend Developer',
+          github: 'https://github.com/Mostafa-Tawfik',
+          img: 'https://avatars.githubusercontent.com/u/90884365?v=4',
+        },
+        {
+          name: 'Ahmed Basem',
+          role: 'Backend Developer',
+          github: 'https://github.com/AhmedBasem20',
+          img: 'https://avatars.githubusercontent.com/u/62952819?v=4',
+        },
       ]
     },
     {
@@ -272,8 +280,22 @@ export default {
       git: 'https://github.com/Mostafa-Tawfik/e-shop',
       image: 'https://i.ibb.co/NCT7LN1/e-shopL.webp',
       imageMobile: 'https://i.ibb.co/sWWK2xv/e-shopP.webp',
-      builtWith: ['HTML 5', 'SASS', 'JavaScript', 'React' , 'React-Query'],
-      overview: ''
+      builtWith: ['HTML 5', 'SASS', 'JavaScript', 'React' , 'React-Query', 'Framer Motion'],
+      overview: '',
+      credits: [
+        {
+          name: 'Mostafa Tawfik',
+          role: 'Frontend Developer',
+          github: 'https://github.com/Mostafa-Tawfik',
+          img: 'https://avatars.githubusercontent.com/u/90884365?v=4',
+        },
+        {
+          name: 'Abdel-Rahman Khaled',
+          role: 'Backend Developer',
+          github: 'https://github.com/Homie980',
+          img: 'https://avatars.githubusercontent.com/u/18067165?v=4',
+        },
+      ]
     },
     {
       id: 5,
@@ -297,7 +319,7 @@ export default {
       git: 'https://github.com/Mostafa-Tawfik/mostafatawfik.com',
       image: 'https://i.ibb.co/fMPTPzw/mtL.webp',
       imageMobile: 'https://i.ibb.co/GtJ0RRS/mtP.webp',
-      builtWith: ['HTML 5','SASS', 'JavaScript', "React", 'Next.js'],
+      builtWith: ['HTML 5','SASS', 'JavaScript', "React", 'Next.js', 'Framer Motion'],
       overview: ''
     },
     {

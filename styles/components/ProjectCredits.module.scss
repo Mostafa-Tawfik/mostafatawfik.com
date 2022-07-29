@@ -1,0 +1,41 @@
+@import '../variables.scss' ;
+
+.project-credits-container {
+  width: 50%;
+
+  .project-credits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .project-credits-section {
+      transition: 0.3s;
+  
+      img {
+        width: 100px;
+        border-radius: 20px;
+      }  
+    }
+  }
+}
+
+.project-credits-section:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+@media (max-width: 440px) {
+  .project-credits-container {
+    width: 80%;
+
+    .project-credits {
+
+      .project-credits-section {
+    
+        p{
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

@@ -17,7 +17,7 @@ function ProjectBuiltWith({ showProject }) {
   return (
     <section className={styles['builtwith']}>
       <h1 className={styles['builtwith-title']}>
-        Built With
+        Frontend Built With
       </h1>
       <div className={styles['builtwith-stack']}>
         {builtStack}

@@ -35,6 +35,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="I'm Mostafa Tawfik a Front-End web developer and UI/UX designer with experience in building and designing static and dynamic responsive websites." />
         <meta property={'og:title'} content='Mostafa Tawfik'/>
+        <meta property={'og:type'} content='website'/>
         <meta property='og:image' content='https://i.ibb.co/pWbjdQd/mtL.png'/>
         <meta property='og:description' content="I'm Mostafa Tawfik a Front-End web developer and UI/UX designer with experience in building and designing static and dynamic responsive websites."/>
         <meta property='og:url' content='https://www.mostafatawfik.com/'/>

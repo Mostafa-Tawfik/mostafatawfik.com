@@ -8,6 +8,7 @@ import ProjectOverview from '../../components/ProjectOverview';
 import ProjectPreview from '../../components/ProjectPreview';
 import ProjectBuiltWith from '../../components/ProjectBuiltWith';
 import ProjectSeeMore from '../../components/ProjectSeeMore';
+import ProjectCredits from '../../components/ProjectCredits';
 
 export default function Project() {
 
@@ -49,6 +50,8 @@ export default function Project() {
           <ProjectPreview showProject={showProject} />
 
           <ProjectBuiltWith showProject={showProject} />
+
+          <ProjectCredits showProject={showProject} />
 
           <ProjectOverview showProject={showProject}/>
 
